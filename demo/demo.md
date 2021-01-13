@@ -24,7 +24,7 @@ The `auro-lockup` element should be used in situations where users may:
 </div>
 
 <auro-accordion lowProfile justifyRight>
-  <span slot="trigger">Siew code</span>
+  <span slot="trigger">See code</span>
 
   ```html
   <auro-lockup cssClass="testClass">Hello World!</auro-lockup>
