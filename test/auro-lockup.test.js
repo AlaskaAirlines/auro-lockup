@@ -3,18 +3,13 @@ import sinon from 'sinon';
 import '../src/auro-lockup.js';
 
 describe('auro-lockup', () => {
-  it('sets the CSS class on auro-lockup > div element', async () => {
-    const el = await fixture(html`
-      <auro-lockup cssclass="testClass"></auro-lockup>
-    `);
-
-    const div = el.shadowRoot.querySelector('div');
-    expect(div.className).to.equal('testClass');
-  });
 
   it('auro-lockup is accessible', async () => {
     const el = await fixture(html`
-      <auro-lockup cssclass="testClass"></auro-lockup>
+      <auro-lockup>
+        <span slot="title">Product Name</span>
+        <span slot="subtitle">Powered by Partner Name</span>
+      </auro-lockup>
     `);
 
     await expect(el).to.be.accessible();
