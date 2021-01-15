@@ -27,9 +27,53 @@
 //   ...
 // }
 
-.testClass {
-  color:  var(--auro-color-border-error-on-light);
-  border: 1px solid var(--auro-color-border-error-on-light);
-  display: inline-block;
-  padding: var(--auro-text-body-size-default);
+.headerLinkBox {
+  display: flex;
+  text-decoration: none;
+  color: var(--auro-color-brand-midnight-400);
+}
+
+:host([onDark]) {
+  .headerLinkBox {
+    color: var(--auro-color-base-gray-100);
+  }
+
+  .logoIcon {
+    border-color: var(--auro-color-base-gray-100);
+  }
+
+  .headerTitle {
+    &-title,
+    &-tagline {
+      color: var(--auro-color-base-gray-100);
+    }
+  }
+}
+
+.logoIcon {
+  width: 8rem;
+  border-right: 1px solid var(--auro-color-base-gray-200);
+  margin-right: var(--auro-size-xs);
+  padding-right: var(--auro-size-xs);
+}
+
+.headerTitle {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: var(--auro-size-xxs);
+
+  &-title {
+    color: var(--auro-color-brand-breeze-300);
+    font-size: var(--auro-size-xl);
+    line-height: 1;
+    padding-bottom: var(--auro-size-xxs);
+  }
+
+  &-tagline {
+    line-height: 1;
+    color: var(--auro-color-base-gray-400);
+    text-transform: uppercase;
+    padding-bottom: var(--auro-size-xxs);
+  }
 }

@@ -1,6 +1,6 @@
 # auro-lockup
 
-`<auro-lockup>` is a [HTML custom element](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements) for the purpose of ...
+`<auro-lockup>` is a [HTML custom element](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements) for Alaska Airlines extended experiences.
 
 ## UI development browser support
 
@@ -39,7 +39,10 @@ import "@alaskaairux/auro-lockup";
 **Reference component in HTML**
 
 ```html
-<auro-lockup>Hello World</auro-lockup>
+<auro-lockup>
+  <span slot="title">Product Name</span>
+  <span slot="subtitle">Powered by Partner Name</span>
+</auro-lockup>
 ```
 
 ## Install bundled assets from CDN
@@ -56,22 +59,6 @@ Since the legacy bundle includes many polyfills that are not needed by modern br
 
 <script src="https://unpkg.com/@alaskaairux/auro-lockup@latest/dist/auro-lockup__bundled.js" type="module"></script>
 <script src="https://unpkg.com/@alaskaairux/auro-lockup@latest/dist/auro-lockup__bundled.es5.js" nomodule></script>
-```
-
-## auro-lockup use cases
-
-The `<auro-lockup>` element should be used in situations where users may:
-
-* ...
-* ...
-* ...
-
-## API Code Examples
-
-Default auro-lockup
-
-```html
-<auro-lockup>Hello World</auro-lockup>
 ```
 
 ## Development
