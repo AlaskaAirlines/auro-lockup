@@ -31,9 +31,6 @@ class AuroLockup extends LitElement {
   constructor() {
     super();
 
-    /**
-     * @private
-     */
     this.path = '/';
   }
 
