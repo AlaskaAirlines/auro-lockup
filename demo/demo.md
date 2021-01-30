@@ -16,8 +16,8 @@ The following illustrates the default use of the `auro-lockup` element. Use the 
 
 <div class="exampleWrapper">
   <auro-lockup>
-    <span slot="title">Product Name</span>
-    <span slot="subtitle">Powered by Partner Name</span>
+    <span slot="title">Place title text here</span>
+    <span slot="subtitle">Place subtitle text here</span>
   </auro-lockup>
 </div>
 
@@ -26,11 +26,20 @@ The following illustrates the default use of the `auro-lockup` element. Use the 
 
   ```html
   <auro-lockup>
-    <span slot="title">Product Name</span>
-    <span slot="subtitle">Powered by Partner Name</span>
+    <span slot="title">Place title text here</span>
+    <span slot="subtitle">Place subtitle text here</span>
   </auro-lockup>
   ```
 </auro-accordion>
+
+## Accessibility
+
+The following table lists the accessibility color information.
+
+| color | token | ratio | rating |
+|---|---|---|---|
+| #099dc5 | | 3.16:1 | Large text - WCAG AA Pass |
+| #767676 | | 4.54:1 | Normal text - WCAG AA Pass |
 
 ## auro-lockup with Oneworld logo
 
