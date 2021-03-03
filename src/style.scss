@@ -38,8 +38,8 @@
     color: var(--auro-color-base-gray-100);
   }
 
-  .logoIcon {
-    border-color: var(--auro-color-base-gray-100);
+  .logoDivider {
+    border-right-color: var(--auro-color-base-gray-100);
   }
 
   .headerTitle {
@@ -52,9 +52,22 @@
 
 .logoIcon {
   width: 8rem;
-  border-right: 1px solid var(--auro-color-base-gray-200);
   margin-right: var(--auro-size-xs);
   padding-right: var(--auro-size-xs);
+  border-right: 1px solid transparent;
+}
+
+.logoDivider {
+  border-right-color: var(--auro-color-base-gray-200);
+}
+
+.oneworldLogo {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 2.6rem;
+  padding-left: var(--auro-size-xxs);
+  margin-bottom: var(--auro-size-xs);
 }
 
 .headerTitle {

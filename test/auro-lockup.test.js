@@ -20,4 +20,19 @@ describe('auro-lockup', () => {
 
     await expect(el).to.be.true;
   });
+
+  it('auro-lockup onworld attribute replaces product and tagline with oneworld logo', async () => {
+    const el = await fixture(html`
+      <auro-lockup oneworld>
+        <span slot="title">Product Name</span>
+        <span slot="subtitle">Powered by Partner Name</span>
+      </auro-lockup>
+    `);
+
+    const logo = el.shadowRoot.querySelector('.oneworldLogo');
+    const headerTitle = el.shadowRoot.querySelector('.headerTitle')
+
+    await expect(logo).to.be.visible;
+    await expect(headerTitle).to.not.exist;
+  });
 });
