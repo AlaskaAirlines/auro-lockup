@@ -5,7 +5,11 @@
 
 // If use litElement base class
 import { LitElement, html, css } from "lit-element";
-import logo from '@alaskaairux/icons/dist/restricted/AS-tagline-200_es6.js';
+import { ifDefined } from 'lit-html/directives/if-defined.js';
+import { classMap } from 'lit-html/directives/class-map';
+import logoOfficial from '@alaskaairux/icons/dist/restricted/AS-tagline-200_es6.js';
+import logoStandard from '@alaskaairux/icons/dist/restricted/AS-200_es6.js';
+import logoOneworld from '@alaskaairux/icons/dist/logos/oneworld_es6.js';
 
 // If using auroElement base class
 // See instructions for importing auroElement base class https://git.io/JULq4
@@ -24,6 +28,8 @@ import styleCss from "./style-css.js";
  * @attr {Boolean} onDark - Toggle onDark UI
  * @slot title - Set title for lockup
  * @slot subtitle - Set sub-title for lockup
+ * @slot {boolean} standard - uses the standard Alaska logo in place of the official logo
+ * @slot {boolean} oneworld - replaces product name and tag line with Oneworld logo
  */
 
 // build the component class
@@ -38,8 +44,16 @@ class AuroLockup extends LitElement {
   static get properties() {
     return {
       // ...super.properties,
-      path:   { type: String }
-    };
+      path: {
+        type: String
+      },
+      standard: {
+        type: Boolean
+      },
+      oneworld: {
+        type: Boolean
+      }
+    }
   }
 
   static get styles() {
@@ -65,19 +79,33 @@ class AuroLockup extends LitElement {
 
   // function that renders the HTML and CSS into  the scope of the component
   render() {
+    const classes = {
+      'logoIcon': true,
+      'logoDivider': !this.oneworld
+    }
+
     return html`
       <a href=${this.path} class="headerLinkBox">
-        <div class="logoIcon">
-          ${this.generateIconHtml(logo.svg)}
+        <div class="${classMap(classes)}">
+          ${ifDefined(this.standard
+            ? this.generateIconHtml(logoStandard.svg)
+            : this.generateIconHtml(logoOfficial.svg))
+          }
         </div>
-        <div class="headerTitle">
-          <span class="headerTitle-title">
-            <slot name="title"></slot>
-          </span>
-          <span class="headerTitle-tagline">
-            <slot name="subtitle"></slot>
-          </span>
-        </div>
+        ${ifDefined(this.oneworld ? html`
+          <div class="oneworldLogo">
+            ${this.generateIconHtml(logoOneworld.svg)}
+          </div>
+        ` : html`
+          <div class="headerTitle">
+            <span class="headerTitle-title">
+              <slot name="title"></slot>
+            </span>
+            <span class="headerTitle-tagline">
+              <slot name="subtitle"></slot>
+            </span>
+          </div>
+        `)}
       </a>
     `;
   }
