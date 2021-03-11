@@ -10,7 +10,9 @@ The `auro-lockup` use cases include:
 * Partner services
 * Auxiliary sites
 
-## auro-lockup standard use
+## auro-lockup default use
+
+The following illustrates the default use of the `auro-lockup` element. Use the `title` and `subtitle` slots to add content to the lockup.
 
 <div class="exampleWrapper">
   <auro-lockup>
@@ -24,26 +26,6 @@ The `auro-lockup` use cases include:
 
   ```html
   <auro-lockup>
-    <span slot="title">Product Name</span>
-    <span slot="subtitle">Powered by Partner Name</span>
-  </auro-lockup>
-  ```
-</auro-accordion>
-
-## auro-lockup with standard logo
-
-<div class="exampleWrapper">
-  <auro-lockup standard>
-    <span slot="title">Product Name</span>
-    <span slot="subtitle">Powered by Partner Name</span>
-  </auro-lockup>
-</div>
-
-<auro-accordion lowProfile justifyRight>
-  <span slot="trigger">See code</span>
-
-  ```html
-  <auro-lockup standard>
     <span slot="title">Product Name</span>
     <span slot="subtitle">Powered by Partner Name</span>
   </auro-lockup>
@@ -52,6 +34,10 @@ The `auro-lockup` use cases include:
 
 ## auro-lockup with Oneworld logo
 
+The following examples illustrate the standard and official versions of the Alaska logo. By default the official versions of the Alaska logo is used. Use the `standard` attribute to display the Alaska logo sans the tagline.
+
+The `standard` property is only supported with the `oneworld` option.
+
 <div class="exampleWrapper">
   <auro-lockup oneworld></auro-lockup>
 </div>
@@ -63,8 +49,6 @@ The `auro-lockup` use cases include:
   <auro-lockup oneworld></auro-lockup>
   ```
 </auro-accordion>
-
-## auro-lockup with standard logo and  Oneworld logo
 
 <div class="exampleWrapper">
   <auro-lockup standard oneworld></auro-lockup>
@@ -78,7 +62,9 @@ The `auro-lockup` use cases include:
   ```
 </auro-accordion>
 
-## auro-lockup onDark use
+## auro-lockup onDark
+
+For lockup use with dark backgrounds or a dark mode, use the `onDark` attribute.
 
 <div class="exampleWrapper exampleWrapper--ondark">
   <auro-lockup onDark>
@@ -92,24 +78,6 @@ The `auro-lockup` use cases include:
 
   ```html
   <auro-lockup onDark>
-    <span slot="title">Product Name</span>
-    <span slot="subtitle">Powered by Partner Name</span>
-  </auro-lockup>
-  ```
-</auro-accordion>
-
-<div class="exampleWrapper exampleWrapper--ondark">
-  <auro-lockup onDark standard>
-    <span slot="title">Product Name</span>
-    <span slot="subtitle">Powered by Partner Name</span>
-  </auro-lockup>
-</div>
-
-<auro-accordion lowProfile justifyRight>
-  <span slot="trigger">See code</span>
-
-  ```html
-  <auro-lockup onDark standard>
     <span slot="title">Product Name</span>
     <span slot="subtitle">Powered by Partner Name</span>
   </auro-lockup>
