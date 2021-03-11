@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [1.1.0](https://github.com/AlaskaAirlines/auro-lockup/compare/v1.0.1...v1.1.0) (2021-03-11)
+
+
+### Features
+
+* update API and release minor version ([e2f4772](https://github.com/AlaskaAirlines/auro-lockup/commit/e2f477225a8031b495cc5335b9f6f9ec138a1bb5))
+
 ## [1.0.1](https://github.com/AlaskaAirlines/auro-lockup/compare/v1.0.0...v1.0.1) (2021-03-11)
 
 
