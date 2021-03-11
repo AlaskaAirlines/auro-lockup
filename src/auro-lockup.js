@@ -87,7 +87,7 @@ class AuroLockup extends LitElement {
     return html`
       <a href=${this.path} class="headerLinkBox">
         <div class="${classMap(classes)}">
-          ${ifDefined(this.standard
+          ${ifDefined(this.standard && this.oneworld
             ? this.generateIconHtml(logoStandard.svg)
             : this.generateIconHtml(logoOfficial.svg))
           }
