@@ -1,6 +1,6 @@
-# auro-lockup
+# Lockup
 
-`<auro-lockup>` is a [HTML custom element](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements) for Alaska Airlines extended experiences.
+`<auro-lockup>` is a [HTML custom element](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements) for the purpose of ...
 
 ## UI development browser support
 
@@ -9,11 +9,11 @@ For the most up to date information on [UI development browser support](https://
 ## Install
 
 [![Build Status](https://img.shields.io/github/workflow/status/AlaskaAirlines/auro-lockup/Test%20and%20publish?branch=master&style=for-the-badge)](https://github.com/AlaskaAirlines/auro-lockup/actions?query=workflow%3A%22test+and+publish%22)
-[![See it on NPM!](https://img.shields.io/npm/v/@alaskaairux/auro-lockup?style=for-the-badge&color=orange)](https://www.npmjs.com/package/@alaskaairux/auro-lockup)
-[![License](https://img.shields.io/npm/l/@alaskaairux/auro-lockup?color=blue&style=for-the-badge)](https://www.apache.org/licenses/LICENSE-2.0)
+[![See it on NPM!](https://img.shields.io/npm/v/@aurodesignsystem/auro-lockup?style=for-the-badge&color=orange)](https://www.npmjs.com/package/@aurodesignsystem/auro-lockup)
+[![License](https://img.shields.io/npm/l/@aurodesignsystem/auro-lockup?color=blue&style=for-the-badge)](https://www.apache.org/licenses/LICENSE-2.0)
 
 ```shell
-$ npm i @alaskaairux/auro-lockup
+$ npm i @aurodesignsystem/auro-lockup
 ```
 
 Installing as a direct, dev or peer dependency is up to the user installing the package. If you are unsure as to what type of dependency you should use, consider reading this [stack overflow](https://stackoverflow.com/questions/18875674/whats-the-difference-between-dependencies-devdependencies-and-peerdependencies) answer.
@@ -33,16 +33,13 @@ Any update to the Auro Design Tokens will be immediately reflected with browsers
 Defining the component dependency within each component that is using the `<auro-lockup>` component.
 
 ```javascript
-import "@alaskaairux/auro-lockup";
+import "@aurodesignsystem/auro-lockup";
 ```
 
 **Reference component in HTML**
 
 ```html
-<auro-lockup>
-  <span slot="title">Product Name</span>
-  <span slot="subtitle">Powered by Partner Name</span>
-</auro-lockup>
+<auro-lockup>Hello World</auro-lockup>
 ```
 
 ## Install bundled assets from CDN
@@ -50,6 +47,8 @@ import "@alaskaairux/auro-lockup";
 In cases where the project is not able to process JS assets, there are pre-processed assets available for use. Two bundles are available -- `auro-lockup__bundled.js` for modern browsers and `auro-lockup__bundled.es5.js` for legacy browsers (including IE11).
 
 Since the legacy bundle includes many polyfills that are not needed by modern browsers, we recommend you load these bundles using [differential serving](https://philipwalton.com/articles/deploying-es2015-code-in-production-today/) so that the browser only loads the bundle it needs. To accomplish this, the script tag for the modern bundle should have `type="module"` and the script tag for the legacy bundle should have the `nomodule` attribute. See the example below.
+
+### Bundle example code
 
 **NOTE:** Be sure to replace `@latest` in the URL with the version of the asset you want. @latest is NOT aware of any MAJOR releases, use at your own risk.
 
@@ -59,6 +58,22 @@ Since the legacy bundle includes many polyfills that are not needed by modern br
 
 <script src="https://unpkg.com/@alaskaairux/auro-lockup@latest/dist/auro-lockup__bundled.js" type="module"></script>
 <script src="https://unpkg.com/@alaskaairux/auro-lockup@latest/dist/auro-lockup__bundled.es5.js" nomodule></script>
+```
+
+## auro-lockup use cases
+
+The `<auro-lockup>` element should be used in situations where users may:
+
+* ...
+* ...
+* ...
+
+## API Code Examples
+
+Default auro-lockup
+
+```html
+<auro-lockup>Hello World</auro-lockup>
 ```
 
 ## Development
@@ -81,5 +96,20 @@ $ npm run serve
 
 Open [localhost:8000](http://localhost:8000/)
 
+### API generation
+
+The custom element API file is generated in the build and committed back to the repo with a version change. If the API doc has changed without a version change, author's are to run `npm run build:api` to generate the doc and commit to version control.
+
 ### Testing
+
 Automated tests are required for every Auro component. See `.\test\auro-lockup.test.js` for the tests for this component. Run `npm test` to run the tests and check code coverage. Tests must pass and meet a certain coverage threshold to commit. See [the testing documentation](https://auro.alaskaair.com/support/tests) for more details.
+
+### Bundled assets
+
+Bundled assets are only generated in the remote and not merged back to this repo. To review and/or test a bundled asset locally, run `$ npm run bundler` to generate assets.
+
+### Demo deployment
+
+To deploy a demo version of the component for review, run `npm run demo:build` to create a `./build` directory that can be pushed to any static server.
+
+<small>Built from WC-Generator v3.5.0</small>
