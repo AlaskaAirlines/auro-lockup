@@ -4,14 +4,14 @@
 // ---------------------------------------------------------------------
 
 // Import Auro tokens
-@import "./node_modules/@alaskaairux/design-tokens/dist/tokens/SCSSVariables";
-@import "./node_modules/@alaskaairux/design-tokens/dist/tokens/SassCustomProperties";
+@import './../node_modules/@alaskaairux/design-tokens/dist/tokens/SCSSVariables';
+@import './../node_modules/@alaskaairux/design-tokens/dist/tokens/SassCustomProperties';
 
-@import "./node_modules/@alaskaairux/webcorestylesheets/dist/breakpoints";
-@import "./node_modules/@alaskaairux/webcorestylesheets/dist/core";
+@import './../node_modules/@alaskaairux/webcorestylesheets/dist/breakpoints';
+@import './../node_modules/@alaskaairux/webcorestylesheets/dist/core';
 
 // Support for auroElement styles
-// @import "./node_modules/@alaskaairux/webcorestylesheets/dist/auroElement/auroElement";
+// @import './../node_modules/@alaskaairux/webcorestylesheets/dist/auroElement/auroElement';
 
 // container styles - defines the look of the outer custom component
 // :host {
@@ -24,15 +24,15 @@
 
 .headerLinkBox {
   display: flex;
-  text-decoration: none;
   color: var(--auro-color-brand-midnight-400); // color for logo
+  text-decoration: none;
 }
 
 .logoIcon {
   width: 8rem;
-  margin-right: var(--auro-size-xs);
   padding-right: var(--auro-size-xs);
   border-right: 1px solid transparent;
+  margin-right: var(--auro-size-xs);
 }
 
 .logoDivider {
@@ -41,31 +41,31 @@
 
 .oneworldLogo {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
   width: 2.6rem;
+  flex-direction: column;
+  justify-content: center;
   padding-left: var(--auro-size-xxs);
   margin-bottom: var(--auro-size-xs);
 }
 
 .headerTitle {
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
   padding-left: var(--auro-size-xxs);
 
   &-title {
+    padding-bottom: var(--auro-size-xxs);
     color: var(--auro-color-brand-breeze-400);
     font-size: var(--auro-size-xl);
     line-height: 1;
-    padding-bottom: var(--auro-size-xxs);
   }
 
   &-tagline {
-    line-height: 1;
-    color: var(--auro-color-brand-gray-400);
-    text-transform: uppercase;
     padding-bottom: var(--auro-size-xxs);
+    color: var(--auro-color-brand-gray-400);
+    line-height: 1;
+    text-transform: uppercase;
   }
 }
 
