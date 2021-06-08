@@ -26,10 +26,12 @@ const getSharedPlugins = (isLegacy) => [
 ];
 
 const modernConfig = {
-  input: 'src/auro-lockup.js',
+  input: {
+    ['auro-lockup__bundled']: './src/auro-lockup.js',
+  },
   output: {
     format: 'esm',
-    file: 'dist/auro-lockup__bundled.js'
+    dir: 'dist/'
   },
   plugins: [
     // remove shady DOM polyfill for modern browsers
@@ -51,7 +53,7 @@ const modernConfig = {
   ]
 };
 
-const legacyConfig = {
+const auroLockupConfig = {
   input: 'src/es5.js',
   output: {
     format: 'iife',
@@ -60,4 +62,4 @@ const legacyConfig = {
   plugins: getSharedPlugins(true)
 };
 
-export default [modernConfig, legacyConfig];
+export default [modernConfig, auroLockupConfig];
