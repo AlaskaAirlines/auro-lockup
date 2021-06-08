@@ -1,5 +1,18 @@
 # Semantic Release Automated Changelog
 
+# [2.0.0](https://github.com/AlaskaAirlines/auro-lockup/compare/v1.1.1...v2.0.0) (2021-06-08)
+
+
+### Bug Fixes
+
+* **docs:** update readme ([73039b0](https://github.com/AlaskaAirlines/auro-lockup/commit/73039b03f6fe5272a7bd1fe3e1d17ad0ea4b844c))
+
+
+### BREAKING CHANGES
+
+* **docs:** This update is released with the new
+@aurodesignsystem npm namespace
+
 ## [1.1.1](https://github.com/AlaskaAirlines/auro-lockup/compare/v1.1.0...v1.1.1) (2021-06-08)
 
 
