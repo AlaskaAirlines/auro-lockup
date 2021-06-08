@@ -69,9 +69,9 @@ class AuroLockup extends LitElement {
    */
   generateIconHtml(svgContent) {
     const dom = new DOMParser().parseFromString(svgContent, 'text/html'),
-    svg = dom.body.firstChild;
+      svg = dom.body.firstChild;
 
-   return html`${svg}`;
+    return html`${svg}`;
   }
 
   // When using auroElement, use the following attribute and function when hiding content from screen readers.
@@ -84,6 +84,7 @@ class AuroLockup extends LitElement {
       'logoDivider': !this.oneworld
     }
 
+    /* eslint-disable indent */
     return html`
       <a href=${this.path} class="headerLinkBox">
         <div class="${classMap(classes)}">
