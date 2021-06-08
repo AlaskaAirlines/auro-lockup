@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [1.1.1](https://github.com/AlaskaAirlines/auro-lockup/compare/v1.1.0...v1.1.1) (2021-06-08)
+
+
+### Bug Fixes
+
+* update lockup to address a11y color issue ([ed8ed47](https://github.com/AlaskaAirlines/auro-lockup/commit/ed8ed4740e02911c9b5453cb94f8c963b2cbda53))
+
 # [1.1.0](https://github.com/AlaskaAirlines/auro-lockup/compare/v1.0.1...v1.1.0) (2021-03-11)
 
 
