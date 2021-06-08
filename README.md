@@ -1,6 +1,6 @@
 # Lockup
 
-`<auro-lockup>` is a [HTML custom element](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements) for the purpose of ...
+`<auro-lockup>` is a standardized [HTML custom element](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements) for the Alaska Airlines extended experience lockup.
 
 ## UI development browser support
 
