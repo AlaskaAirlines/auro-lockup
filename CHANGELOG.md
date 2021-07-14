@@ -1,5 +1,14 @@
 # Semantic Release Automated Changelog
 
+## [2.0.1](https://github.com/AlaskaAirlines/auro-lockup/compare/v2.0.0...v2.0.1) (2021-07-14)
+
+
+### Bug Fixes
+
+* **generator migration:** migrate repo to 3.5.0 ([b9827e0](https://github.com/AlaskaAirlines/auro-lockup/commit/b9827e0a2027021bfb4bbeb68c878fbb9d1a4673))
+* roll back eslint configs ([881adf8](https://github.com/AlaskaAirlines/auro-lockup/commit/881adf85b048e6eea402e7d5427bc1e2b9985034))
+* **generator migration:** migrate repo to generator build v3.5.1 ([945ba69](https://github.com/AlaskaAirlines/auro-lockup/commit/945ba6965a827d7651dcfe003e80767295e0c9ca))
+
 # [2.0.0](https://github.com/AlaskaAirlines/auro-lockup/compare/v1.1.1...v2.0.0) (2021-06-08)
 
 
