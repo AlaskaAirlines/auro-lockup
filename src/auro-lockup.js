@@ -38,6 +38,8 @@ class AuroLockup extends LitElement {
     super();
 
     this.path = '/';
+    this.standard = false;
+    this.oneworld = false;
   }
 
   // function to define props used within the scope of this component
