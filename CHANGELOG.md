@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [2.0.2](https://github.com/AlaskaAirlines/auro-lockup/compare/v2.0.1...v2.0.2) (2021-08-03)
+
+
+### Bug Fixes
+
+* default boolean props to false [#10](https://github.com/AlaskaAirlines/auro-lockup/issues/10) ([8919d7b](https://github.com/AlaskaAirlines/auro-lockup/commit/8919d7b045df250d131d7a6af2be9f3147236334))
+
 ## [2.0.1](https://github.com/AlaskaAirlines/auro-lockup/compare/v2.0.0...v2.0.1) (2021-07-14)
 
 

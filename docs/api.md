@@ -12,9 +12,9 @@ auro-lockup is a standardized custom element for the use in headers of Alaska Ai
 
 | Property   | Attribute  | Type      | Default | Description              |
 |------------|------------|-----------|---------|--------------------------|
-| `oneworld` | `oneworld` | `boolean` |         |                          |
+| `oneworld` | `oneworld` | `boolean` | false   |                          |
 | `path`     | `path`     | `String`  | "/"     | URL path for lockup link |
-| `standard` | `standard` | `boolean` |         |                          |
+| `standard` | `standard` | `boolean` | false   |                          |
 
 ## Slots
 
