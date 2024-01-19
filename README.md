@@ -1,102 +1,191 @@
-# Lockup
+<!--
+The README.md file is a compiled document. No edits should be made directly to this file.
 
-`<auro-lockup>` is a standardized [HTML custom element](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements) for the Alaska Airlines extended experience lockup.
+README.md is created by running `npm run build:docs`.
+
+This file is generated based on a template fetched from
+`https://raw.githubusercontent.com/AlaskaAirlines/WC-Generator/master/componentDocs/README.md`
+and copied to `./componentDocs/README.md` each time the the docs are compiled.
+
+The following sections are editable by making changes to the following files:
+
+| SECTION                | DESCRIPTION                                       | FILE LOCATION                       |
+|------------------------|---------------------------------------------------|-------------------------------------|
+| Description            | Description of the component                      | `./docs/partials/description.md`    |
+| Use Cases              | Examples for when to use this component           | `./docs/partials/useCases.md`       |
+| Additional Information | For use to add any component specific information | `./docs/partials/readmeAddlInfo.md` |
+| Component Example Code | HTML sample code of the components use            | `./apiExamples/basic.html`          |
+-->
+
+# [Name]
+
+<!-- AURO-GENERATED-CONTENT:START (FILE:src=./../docs/partials/description.md) -->
+<!-- The below content is automatically added from ./../docs/partials/description.md -->
+The `auro-lockup` HTML custom element is a standardized use case element for authorized Alaska Airlines extended experiences.
+<!-- AURO-GENERATED-CONTENT:END -->
+<!-- AURO-GENERATED-CONTENT:START (FILE:src=./../docs/partials/readmeAddlInfo.md) -->
+<!-- The below content is automatically added from ./../docs/partials/readmeAddlInfo.md -->
+<!-- AURO-GENERATED-CONTENT This file is to be used for any additional content that should be included in the README.md which is specific to this component. -->
+<!-- AURO-GENERATED-CONTENT:END -->
 
 ## UI development browser support
 
+<!-- AURO-GENERATED-CONTENT:START (REMOTE:url=https://raw.githubusercontent.com/AlaskaAirlines/WC-Generator/master/componentDocs/partials/browserSupport.md) -->
 For the most up to date information on [UI development browser support](https://auro.alaskaair.com/support/browsersSupport)
+
+<!-- AURO-GENERATED-CONTENT:END -->
 
 ## Install
 
-[![Build Status](https://img.shields.io/github/actions/workflow/status/AlaskaAirlines/auro-table/testPublish.yml?style=for-the-badge)](https://github.com/AlaskaAirlines/auro-table/actions/workflows/testPublish.yml)
-[![See it on NPM!](https://img.shields.io/npm/v/@aurodesignsystem/auro-lockup?style=for-the-badge&color=orange)](https://www.npmjs.com/package/@aurodesignsystem/auro-lockup)
-[![License](https://img.shields.io/npm/l/@aurodesignsystem/auro-lockup?color=blue&style=for-the-badge)](https://www.apache.org/licenses/LICENSE-2.0)
+<!-- AURO-GENERATED-CONTENT:START (REMOTE:url=https://raw.githubusercontent.com/AlaskaAirlines/WC-Generator/master/componentDocs/partials/usage/componentInstall.md) -->
+[![Build Status](https://img.shields.io/github/actions/workflow/status/AlaskaAirlines/[namespace]-[name]/testPublish.yml?style=for-the-badge)](https://github.com/AlaskaAirlines/[namespace]-[name]/actions/workflows/testPublish.yml)
+[![See it on NPM!](https://img.shields.io/npm/v/[npm]/[namespace]-[name]?style=for-the-badge&color=orange)](https://www.npmjs.com/package/[npm]/[namespace]-[name])
+[![License](https://img.shields.io/npm/l/[npm]/[namespace]-[name]?color=blue&style=for-the-badge)](https://www.apache.org/licenses/LICENSE-2.0)
 
 ```shell
-$ npm i @aurodesignsystem/auro-lockup
+$ npm i [npm]/[namespace]-[name]
 ```
 
 Installing as a direct, dev or peer dependency is up to the user installing the package. If you are unsure as to what type of dependency you should use, consider reading this [stack overflow](https://stackoverflow.com/questions/18875674/whats-the-difference-between-dependencies-devdependencies-and-peerdependencies) answer.
 
+<!-- AURO-GENERATED-CONTENT:END -->
+
 ### Design Token CSS Custom Property dependency
 
+<!-- AURO-GENERATED-CONTENT:START (REMOTE:url=https://raw.githubusercontent.com/AlaskaAirlines/WC-Generator/master/componentDocs/partials/development/designTokens.md) -->
 The use of any Auro custom element has a dependency on the [Auro Design Tokens](https://auro.alaskaair.com/getting-started/developers/design-tokens).
+
+<!-- AURO-GENERATED-CONTENT:END -->
 
 ### CSS Custom Property fallbacks
 
+<!-- AURO-GENERATED-CONTENT:START (REMOTE:url=https://raw.githubusercontent.com/AlaskaAirlines/WC-Generator/master/componentDocs/partials/usage/cssFallbacks.md) -->
 [CSS custom properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) are [not supported](https://auro.alaskaair.com/support/custom-properties) in older browsers. For this, fallback properties are pre-generated and included with the npm.
 
 Any update to the Auro Design Tokens will be immediately reflected with browsers that support CSS custom properties, legacy browsers will require updated components with pre-generated fallback properties.
 
+<!-- AURO-GENERATED-CONTENT:END -->
+
 ### Define dependency in project component
 
-Defining the component dependency within each component that is using the `<auro-lockup>` component.
+<!-- AURO-GENERATED-CONTENT:START (REMOTE:url=https://raw.githubusercontent.com/AlaskaAirlines/WC-Generator/master/componentDocs/partials/usage/componentImportDescription.md) -->
+Defining the component dependency within each component that is using the `<[namespace]-[name]>` component.
 
-```javascript
-import "@aurodesignsystem/auro-lockup";
+<!-- AURO-GENERATED-CONTENT:END -->
+<!-- AURO-GENERATED-CONTENT:START (REMOTE:url=https://raw.githubusercontent.com/AlaskaAirlines/WC-Generator/master/componentDocs/partials/usage/componentImport.md) -->
+
+```js
+import "[npm]/[namespace]-[name]";
 ```
 
+<!-- AURO-GENERATED-CONTENT:END -->
 **Reference component in HTML**
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../apiExamples/basic.html) -->
+<!-- The below code snippet is automatically added from ./../apiExamples/basic.html -->
 
 ```html
 <auro-lockup>
-  <span slot="title">Product Name</span>
-  <span slot="subtitle">Powered by Partner Name</span>
+  <span slot="title">Place title text here</span>
+  <span slot="subtitle">Place subtitle text here</span>
 </auro-lockup>
 ```
+<!-- AURO-GENERATED-CONTENT:END -->
 
 ## Install bundled assets from CDN
 
-In cases where the project is not able to process JS assets, there are pre-processed assets available for use. Two bundles are available -- `auro-lockup__bundled.js` for modern browsers and `auro-lockup__bundled.es5.js` for legacy browsers (including IE11).
+<!-- AURO-GENERATED-CONTENT:START (REMOTE:url=https://raw.githubusercontent.com/AlaskaAirlines/WC-Generator/master/componentDocs/partials/usage/bundleInstallDescription.md) -->
+In cases where the project is not able to process JS assets, there are pre-processed assets available for use. See -- `[namespace]-[name]__bundled.js` for modern browsers. Legacy browsers such as IE11 are no longer supported.
 
-Since the legacy bundle includes many polyfills that are not needed by modern browsers, we recommend you load these bundles using [differential serving](https://philipwalton.com/articles/deploying-es2015-code-in-production-today/) so that the browser only loads the bundle it needs. To accomplish this, the script tag for the modern bundle should have `type="module"` and the script tag for the legacy bundle should have the `nomodule` attribute. See the example below.
+We recommend you load these bundles using [differential serving](https://philipwalton.com/articles/deploying-es2015-code-in-production-today/) so that the browser only loads the bundle correctly. To accomplish this, the script tag for the modern bundle should have `type="module"` and the script tag.
+
+<!-- AURO-GENERATED-CONTENT:END -->
 
 ### Bundle example code
 
-**NOTE:** Be sure to replace `@latest` in the URL with the version of the asset you want. @latest is NOT aware of any MAJOR releases, use at your own risk.
+<!-- AURO-GENERATED-CONTENT:START (REMOTE:url=https://raw.githubusercontent.com/AlaskaAirlines/WC-Generator/master/componentDocs/partials/usage/bundleUse.md) -->
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/@alaskaairux/design-tokens@latest/dist/tokens/CSSCustomProperties.css" />
-<link rel="stylesheet" href="https://unpkg.com/@alaskaairux/webcorestylesheets@latest/dist/bundled/essentials.css" />
-
-<script src="https://unpkg.com/@alaskaairux/auro-lockup@latest/dist/auro-lockup__bundled.js" type="module"></script>
-<script src="https://unpkg.com/@alaskaairux/auro-lockup@latest/dist/auro-lockup__bundled.es5.js" nomodule></script>
+<!-- **NOTE:** Be sure to replace `@latest` in the URL with the version of the asset you want. @latest is NOT aware of any MAJOR releases, use at your own risk. -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@alaskaairux/design-tokens@latest/dist/tokens/CSSCustomProperties.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@aurodesignsystem/webcorestylesheets@latest/dist/bundled/essentials.css" />
+<script src="https://cdn.jsdelivr.net/npm/[npm]/[namespace]-[name]@latest/dist/[namespace]-[name]__bundled.js" type="module"></script>
 ```
+
+<!-- AURO-GENERATED-CONTENT:END -->
+
+## [namespace]-[name] use cases
+
+<!-- AURO-GENERATED-CONTENT:START (FILE:src=./../docs/partials/useCases.md) -->
+<!-- The below content is automatically added from ./../docs/partials/useCases.md -->
+The `auro-lockup` use cases include:
+
+* Product lines
+* Partner services
+* Auxiliary sites
+<!-- AURO-GENERATED-CONTENT:END -->
+
+## API Code Examples
+
+### Default [namespace]-[name]
+
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../apiExamples/basic.html) -->
+<!-- The below code snippet is automatically added from ./../apiExamples/basic.html -->
+
+```html
+<auro-lockup>
+  <span slot="title">Place title text here</span>
+  <span slot="subtitle">Place subtitle text here</span>
+</auro-lockup>
+```
+<!-- AURO-GENERATED-CONTENT:END -->
 
 ## Development
 
+<!-- AURO-GENERATED-CONTENT:START (REMOTE:url=https://raw.githubusercontent.com/AlaskaAirlines/WC-Generator/master/componentDocs/partials/development/developmentDescription.md) -->
 In order to develop against this project, if you are not part of the core team, you will be required to fork the project prior to submitting a pull request.
 
-Please be sure to review the [contribution guidelines](https://auro.alaskaair.com/getting-started/developers/contributing) for this project. Please make sure to **pay special attention** to the **conventional commits** section of the document.
+Please be sure to review the [contribution guidelines](https://auro.alaskaair.com/contributing) for this project. Please make sure to **pay special attention** to the **conventional commits** section of the document.
+
+<!-- AURO-GENERATED-CONTENT:END -->
 
 ### Start development environment
 
-Once the project has been cloned to your local resource and you have installed all the dependencies you will need to open two different shell sessions. One is for the **npm tasks**, the second is to run the **server**.
+<!-- AURO-GENERATED-CONTENT:START (REMOTE:url=https://raw.githubusercontent.com/AlaskaAirlines/WC-Generator/master/componentDocs/partials/development/localhost.md) -->
+Once the project has been cloned to your local resource and you have installed all the dependencies you will need to open a shell session to run the **dev server**.
 
 ```shell
-// shell terminal one
 $ npm run dev
-
-// shell terminal two
-$ npm run serve
 ```
 
 Open [localhost:8000](http://localhost:8000/)
 
+If running separate sessions is preferred, please run the following commands in individual terminal shells.
+
+```shell
+$ npm run build:watch
+
+$ npm run serve
+```
+
+<!-- AURO-GENERATED-CONTENT:END -->
+
 ### API generation
 
+<!-- AURO-GENERATED-CONTENT:START (REMOTE:url=https://raw.githubusercontent.com/AlaskaAirlines/WC-Generator/master/componentDocs/partials/development/api.md) -->
 The custom element API file is generated in the build and committed back to the repo with a version change. If the API doc has changed without a version change, author's are to run `npm run build:api` to generate the doc and commit to version control.
+
+<!-- AURO-GENERATED-CONTENT:END -->
 
 ### Testing
 
-Automated tests are required for every Auro component. See `.\test\auro-lockup.test.js` for the tests for this component. Run `npm test` to run the tests and check code coverage. Tests must pass and meet a certain coverage threshold to commit. See [the testing documentation](https://auro.alaskaair.com/support/tests) for more details.
+<!-- AURO-GENERATED-CONTENT:START (REMOTE:url=https://raw.githubusercontent.com/AlaskaAirlines/WC-Generator/master/componentDocs/partials/development/testing.md) -->
+Automated tests are required for every Auro component. See `.\test\[namespace]-[name].test.js` for the tests for this component. Run `npm test` to run the tests and check code coverage. Tests must pass and meet a certain coverage threshold to commit. See [the testing documentation](https://auro.alaskaair.com/support/tests) for more details.
+
+<!-- AURO-GENERATED-CONTENT:END -->
 
 ### Bundled assets
 
+<!-- AURO-GENERATED-CONTENT:START (REMOTE:url=https://raw.githubusercontent.com/AlaskaAirlines/WC-Generator/master/componentDocs/partials/development/bundles.md) -->
 Bundled assets are only generated in the remote and not merged back to this repo. To review and/or test a bundled asset locally, run `$ npm run bundler` to generate assets.
 
-### Demo deployment
-
-To deploy a demo version of the component for review, run `npm run demo:build` to create a `./build` directory that can be pushed to any static server.
-
-<small>Built from WC-Generator v3.5.0</small>
+<!-- AURO-GENERATED-CONTENT:END -->

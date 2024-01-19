@@ -1,6 +1,6 @@
 # auro-lockup
 
-auro-lockup is a standardized custom element for the use in headers of Alaska Airlines extended experiences
+The auro-lockup element is a standardized custom element for the use in headers of Alaska Airlines extended experiences.
 
 ## Attributes
 
@@ -10,17 +10,15 @@ auro-lockup is a standardized custom element for the use in headers of Alaska Ai
 
 ## Properties
 
-| Property   | Attribute  | Type      | Default | Description              |
-|------------|------------|-----------|---------|--------------------------|
-| `oneworld` | `oneworld` | `boolean` | false   |                          |
-| `path`     | `path`     | `String`  | "/"     | URL path for lockup link |
-| `standard` | `standard` | `boolean` | false   |                          |
+| Property   | Attribute  | Type      | Default | Description                                      |
+|------------|------------|-----------|---------|--------------------------------------------------|
+| `oneworld` | `oneworld` | `boolean` | false   | replaces product name and tag line with Oneworld logo |
+| `path`     | `path`     | `String`  | "/"     | URL path for lockup link                         |
+| `standard` | `standard` | `boolean` | false   | uses the standard Alaska logo in place of the official logo, requires use of `oneWorld` attribute. |
 
 ## Slots
 
-| Name       | Description                                      |
-|------------|--------------------------------------------------|
-| `oneworld` | replaces product name and tag line with Oneworld logo |
-| `standard` | uses the standard Alaska logo in place of the official logo |
-| `subtitle` | Set sub-title for lockup                         |
-| `title`    | Set title for lockup                             |
+| Name       | Description              |
+|------------|--------------------------|
+| `subtitle` | Set sub-title for lockup |
+| `title`    | Set title for lockup     |

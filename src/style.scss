@@ -4,14 +4,13 @@
 // ---------------------------------------------------------------------
 
 // Import Auro tokens
-@import './../node_modules/@alaskaairux/design-tokens/dist/tokens/SCSSVariables';
-@import './../node_modules/@alaskaairux/design-tokens/dist/tokens/SassCustomProperties';
+@import './../node_modules/@aurodesignsystem/design-tokens/dist/tokens/SCSSVariables';
 
-@import './../node_modules/@alaskaairux/webcorestylesheets/dist/breakpoints';
-@import './../node_modules/@alaskaairux/webcorestylesheets/dist/core';
+@import './../node_modules/@aurodesignsystem/webcorestylesheets/src/breakpoints';
+@import './../node_modules/@aurodesignsystem/webcorestylesheets/src/core';
 
 // Support for auroElement styles
-// @import './../node_modules/@alaskaairux/webcorestylesheets/dist/auroElement/auroElement';
+// @import './../node_modules/@aurodesignsystem/webcorestylesheets/dist/auroElement/auroElement';
 
 // container styles - defines the look of the outer custom component
 // :host {
@@ -21,22 +20,21 @@
 // layout styles - define any layout specifications for UI that is contained WITHIN the component
 // never define layout that would cause effect on element outside the scope of this component
 
-
 .headerLinkBox {
   display: flex;
-  color: var(--auro-color-brand-midnight-400); // color for logo
+  color: var(--ds-color-brand-midnight-400, $ds-color-brand-midnight-400); // color for logo
   text-decoration: none;
 }
 
 .logoIcon {
   width: 8rem;
-  padding-right: var(--auro-size-xs);
+  padding-right: var(--ds-size-100, $ds-size-100);
   border-right: 1px solid transparent;
-  margin-right: var(--auro-size-xs);
+  margin-right: var(--ds-size-100, $ds-size-100);
 }
 
 .logoDivider {
-  border-right-color: var(--auro-color-base-gray-200);
+  border-right-color: var(--ds-color-brand-gray-200, $ds-color-brand-gray-200);
 }
 
 .oneworldLogo {
@@ -44,26 +42,26 @@
   width: 2.6rem;
   flex-direction: column;
   justify-content: center;
-  padding-left: var(--auro-size-xxs);
-  margin-bottom: var(--auro-size-xs);
+  padding-left: var(--ds-size-50, $ds-size-50);
+  margin-bottom: var(--ds-size-100, $ds-size-100);
 }
 
 .headerTitle {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: var(--auro-size-xxs);
+  padding-left: var(--ds-size-50, $ds-size-50);
 
   &-title {
-    padding-bottom: var(--auro-size-xxs);
-    color: var(--auro-color-brand-breeze-400);
-    font-size: var(--auro-size-xl);
+    padding-bottom: var(--ds-size-50, $ds-size-50);
+    color: var(--ds-color-brand-breeze-400, $ds-color-brand-breeze-400);
+    font-size: var(--ds-size-400, $ds-size-400);
     line-height: 1;
   }
 
   &-tagline {
-    padding-bottom: var(--auro-size-xxs);
-    color: var(--auro-color-brand-gray-400);
+    padding-bottom: var(--ds-size-50, $ds-size-50);
+    color: var(--ds-color-brand-gray-400, $ds-color-brand-gray-400);
     line-height: 1;
     text-transform: uppercase;
   }
@@ -72,17 +70,17 @@
 // -=-=-=-= ondark -=-=-=-=-=-=-=
 :host([onDark]) {
   .headerLinkBox {
-    color: var(--auro-color-base-gray-100);
+    color: var(--ds-color-brand-gray-100, $ds-color-brand-gray-100);
   }
 
   .logoDivider {
-    border-right-color: var(--auro-color-base-gray-100);
+    border-right-color: var(--ds-color-brand-gray-100, $ds-color-brand-gray-100);
   }
 
   .headerTitle {
     &-title,
     &-tagline {
-      color: var(--auro-color-base-gray-100);
+      color: var(--ds-color-brand-gray-100, $ds-color-brand-gray-100);
     }
   }
 }
