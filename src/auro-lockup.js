@@ -3,10 +3,12 @@
 
 // ---------------------------------------------------------------------
 
+/* eslint-disable indent, jsdoc/no-undefined-types */
+
 // If use litElement base class
-import { LitElement, html, css } from "lit-element";
-import { ifDefined } from 'lit-html/directives/if-defined.js';
-import { classMap } from 'lit-html/directives/class-map';
+import { LitElement, html } from "lit";
+import { ifDefined } from 'lit/directives/if-defined.js';
+import { classMap } from 'lit/directives/class-map.js';
 import logoOfficial from '@alaskaairux/icons/dist/restricted/AS-tagline-200_es6.js';
 import logoStandard from '@alaskaairux/icons/dist/restricted/AS-200_es6.js';
 import logoOneworld from '@alaskaairux/icons/dist/logos/oneworld_es6.js';
@@ -17,23 +19,23 @@ import logoOneworld from '@alaskaairux/icons/dist/logos/oneworld_es6.js';
 // import AuroElement from '@alaskaairux/webcorestylesheets/dist/auroElement/auroElement';
 
 // Import touch detection lib
-import "focus-visible/dist/focus-visible.min.js";
+// import "focus-visible/dist/focus-visible.min.js";
 import styleCss from "./style-css.js";
 
 // See https://git.io/JJ6SJ for "How to document your components using JSDoc"
 /**
- * auro-lockup is a standardized custom element for the use in headers of Alaska Airlines extended experiences
+ * The auro-lockup element is a standardized custom element for the use in headers of Alaska Airlines extended experiences.
  *
  * @attr {String} path - URL path for lockup link
  * @attr {Boolean} onDark - Toggle onDark UI
  * @slot title - Set title for lockup
  * @slot subtitle - Set sub-title for lockup
- * @slot {boolean} standard - uses the standard Alaska logo in place of the official logo
- * @slot {boolean} oneworld - replaces product name and tag line with Oneworld logo
+ * @attr {boolean} standard - uses the standard Alaska logo in place of the official logo, requires use of `oneWorld` attribute.
+ * @attr {boolean} oneworld - replaces product name and tag line with Oneworld logo
  */
 
 // build the component class
-class AuroLockup extends LitElement {
+export class AuroLockup extends LitElement {
   constructor() {
     super();
 
@@ -55,19 +57,17 @@ class AuroLockup extends LitElement {
       oneworld: {
         type: Boolean
       }
-    }
+    };
   }
 
   static get styles() {
-    return css`
-      ${styleCss}
-    `;
+    return [styleCss];
   }
 
   /**
-   * @private Internal function to generate the HTML for the icon to use
-   * @param {string} svgContent - The imported svg icon
-   * @returns {TemplateResult} - The html template for the icon
+   * @private
+   * @param {string} svgContent - The imported svg icon.
+   * @returns {TemplateResult} - The html template for the icon.
    */
   generateIconHtml(svgContent) {
     const dom = new DOMParser().parseFromString(svgContent, 'text/html'),
@@ -84,9 +84,8 @@ class AuroLockup extends LitElement {
     const classes = {
       'logoIcon': true,
       'logoDivider': !this.oneworld
-    }
+    };
 
-    /* eslint-disable indent */
     return html`
       <a href=${this.path} class="headerLinkBox">
         <div class="${classMap(classes)}">
@@ -114,7 +113,6 @@ class AuroLockup extends LitElement {
   }
 }
 
-/* istanbul ignore else */
 // define the name of the custom component
 if (!customElements.get("auro-lockup")) {
   customElements.define("auro-lockup", AuroLockup);
