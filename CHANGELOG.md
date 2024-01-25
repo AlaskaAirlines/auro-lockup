@@ -1,5 +1,22 @@
 # Semantic Release Automated Changelog
 
+# [3.0.0](https://github.com/AlaskaAirlines/auro-lockup/compare/v2.0.2...v3.0.0) (2024-01-25)
+
+
+### chore
+
+* update dependencies ([aaaed33](https://github.com/AlaskaAirlines/auro-lockup/commit/aaaed33a42c081aaecf19b3828fa7801f078e52e))
+
+
+### BREAKING CHANGES
+
+* previous merge did not contain the proper comment so
+using this commit to force a new release.
+
+Changes to be committed:
+modified:   package-lock.json
+modified:   package.json
+
 ## [2.0.2](https://github.com/AlaskaAirlines/auro-lockup/compare/v2.0.1...v2.0.2) (2021-08-03)
 
 
