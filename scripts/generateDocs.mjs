@@ -38,7 +38,7 @@ function nameExtraction() {
 }
 
 /**
- * Replace all instances of @aurodesignsystem, lockup, Lockup, auro and Auro accordingly
+ * Replace all instances of [npm], [name], [Name], [namespace] and [Namespace] accordingly
  */
 
 function formatTemplateFileContents(content, destination) {
@@ -48,11 +48,11 @@ function formatTemplateFileContents(content, destination) {
   /**
    * Replace placeholder strings
    */
-  result = result.replace(/\@aurodesignsystem/g, nameExtractionData.npm);
-  result = result.replace(/\lockup(?!\()/g, nameExtractionData.name);
-  result = result.replace(/\Lockup(?!\()/g, nameExtractionData.nameCap);
-  result = result.replace(/\auro/g, nameExtractionData.namespace);
-  result = result.replace(/\Auro/g, nameExtractionData.namespaceCap);
+  result = result.replace(/\[npm]/g, nameExtractionData.npm);
+  result = result.replace(/\[name](?!\()/g, nameExtractionData.name);
+  result = result.replace(/\[Name](?!\()/g, nameExtractionData.nameCap);
+  result = result.replace(/\[namespace]/g, nameExtractionData.namespace);
+  result = result.replace(/\[Namespace]/g, nameExtractionData.namespaceCap);
 
   /**
    * Cleanup line breaks
