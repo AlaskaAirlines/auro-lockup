@@ -1,4 +1,4 @@
-import { AuroLockup } from './src/auro-lockup';
+import { AuroLockup } from './src/auro-lockup.js';
 
 /**
  * Register Custom Element.
