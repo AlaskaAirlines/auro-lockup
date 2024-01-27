@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [3.0.1](https://github.com/AlaskaAirlines/auro-lockup/compare/v3.0.0...v3.0.1) (2024-01-27)
+
+
+### Performance Improvements
+
+* update index per SSR support ([88aab88](https://github.com/AlaskaAirlines/auro-lockup/commit/88aab882b1fe87d5db1c68125cd4d27552a88292))
+
 # [3.0.0](https://github.com/AlaskaAirlines/auro-lockup/compare/v2.0.2...v3.0.0) (2024-01-25)
 
 
