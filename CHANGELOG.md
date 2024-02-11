@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [3.0.3](https://github.com/AlaskaAirlines/auro-lockup/compare/v3.0.2...v3.0.3) (2024-02-11)
+
+
+### Performance Improvements
+
+* update to support ESM development ([40f0924](https://github.com/AlaskaAirlines/auro-lockup/commit/40f0924d81b927a981b09fab90ea419396881281))
+
 ## [3.0.2](https://github.com/AlaskaAirlines/auro-lockup/compare/v3.0.1...v3.0.2) (2024-01-31)
 
 
