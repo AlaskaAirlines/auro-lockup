@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [3.0.4](https://github.com/AlaskaAirlines/auro-lockup/compare/v3.0.3...v3.0.4) (2024-02-11)
+
+
+### Performance Improvements
+
+* add icons to peer deps ([abe5fad](https://github.com/AlaskaAirlines/auro-lockup/commit/abe5fad21a503522ec6b673acaf42f2acf785548))
+
 ## [3.0.3](https://github.com/AlaskaAirlines/auro-lockup/compare/v3.0.2...v3.0.3) (2024-02-11)
 
 
