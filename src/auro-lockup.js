@@ -9,9 +9,9 @@
 import { LitElement, html } from "lit";
 import { ifDefined } from 'lit/directives/if-defined.js';
 import { classMap } from 'lit/directives/class-map.js';
-import logoOfficial from '@alaskaairux/icons/dist/restricted/AS-tagline-200.mjs';
-import logoStandard from '@alaskaairux/icons/dist/restricted/AS-200.mjs';
-import logoOneworld from '@alaskaairux/icons/dist/logos/oneworld.mjs';
+import logoOfficial from '@alaskaairux/icons/dist/restricted/AS-tagline-200_es6.js';
+import logoStandard from '@alaskaairux/icons/dist/restricted/AS-200_es6.js';
+import logoOneworld from '@alaskaairux/icons/dist/logos/oneworld_es6.js';
 
 // If using auroElement base class
 // See instructions for importing auroElement base class https://git.io/JULq4
