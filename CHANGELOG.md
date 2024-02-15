@@ -1,5 +1,13 @@
 # Semantic Release Automated Changelog
 
+## [3.0.5](https://github.com/AlaskaAirlines/auro-lockup/compare/v3.0.4...v3.0.5) (2024-02-15)
+
+
+### Performance Improvements
+
+* **demo:** update demo file names ([99c6abf](https://github.com/AlaskaAirlines/auro-lockup/commit/99c6abfd3170fa05dd287ac101690c2f11b64699))
+* **deps:** update dependencies ([02088da](https://github.com/AlaskaAirlines/auro-lockup/commit/02088daed6de5c75385ec7f1ab4d0090ac663c0a))
+
 ## [3.0.4](https://github.com/AlaskaAirlines/auro-lockup/compare/v3.0.3...v3.0.4) (2024-02-11)
 
 
