@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [3.0.6](https://github.com/AlaskaAirlines/auro-lockup/compare/v3.0.5...v3.0.6) (2024-02-20)
+
+
+### Performance Improvements
+
+* update [@aurodesignsystem](https://github.com/aurodesignsystem) dependencies ([21f272d](https://github.com/AlaskaAirlines/auro-lockup/commit/21f272ded7c3ae6aeb7fabe12381f03f9bb9e943))
+
 ## [3.0.5](https://github.com/AlaskaAirlines/auro-lockup/compare/v3.0.4...v3.0.5) (2024-02-15)
 
 
