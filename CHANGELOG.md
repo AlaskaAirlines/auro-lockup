@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [3.0.7](https://github.com/AlaskaAirlines/auro-lockup/compare/v3.0.6...v3.0.7) (2024-02-20)
+
+
+### Performance Improvements
+
+* update icon refs to use ESM supported SVGs ([b60f1c3](https://github.com/AlaskaAirlines/auro-lockup/commit/b60f1c31696716325277190ffb546e0b076f781e))
+
 ## [3.0.6](https://github.com/AlaskaAirlines/auro-lockup/compare/v3.0.5...v3.0.6) (2024-02-20)
 
 
