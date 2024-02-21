@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [3.0.8](https://github.com/AlaskaAirlines/auro-lockup/compare/v3.0.7...v3.0.8) (2024-02-21)
+
+
+### Performance Improvements
+
+* **docs:** add custom reg example ([22f93b7](https://github.com/AlaskaAirlines/auro-lockup/commit/22f93b73c44264e94ddbe9a0f9dc8e97286bdbfd))
+
 ## [3.0.7](https://github.com/AlaskaAirlines/auro-lockup/compare/v3.0.6...v3.0.7) (2024-02-20)
 
 
