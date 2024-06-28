@@ -13,14 +13,9 @@ import logoOfficial from '@alaskaairux/icons/dist/restricted/AS-tagline-200.mjs'
 import logoStandard from '@alaskaairux/icons/dist/restricted/AS-200.mjs';
 import logoOneworld from '@alaskaairux/icons/dist/logos/oneworld.mjs';
 
-// If using auroElement base class
-// See instructions for importing auroElement base class https://git.io/JULq4
-// import { html, css } from "lit-element";
-// import AuroElement from '@alaskaairux/webcorestylesheets/dist/auroElement/auroElement';
-
-// Import touch detection lib
-// import "focus-visible/dist/focus-visible.min.js";
 import styleCss from "./style-css.js";
+import colorCss from "./color-css.js";
+import tokensCss from "./tokens-css.js";
 
 // See https://git.io/JJ6SJ for "How to document your components using JSDoc"
 /**
@@ -61,7 +56,11 @@ export class AuroLockup extends LitElement {
   }
 
   static get styles() {
-    return [styleCss];
+    return [
+      styleCss,
+      colorCss,
+      tokensCss
+    ];
   }
 
   /**
