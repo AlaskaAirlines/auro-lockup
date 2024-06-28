@@ -164,3 +164,21 @@ Usd the `subtitle` slot to add lockup content.
 ```
 <!-- AURO-GENERATED-CONTENT:END -->
 </auro-accordion>
+
+### Theme Support
+
+The component may be restyled using the following code sample and changing the values of the following token(s).
+
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../src/tokens.scss) -->
+<!-- The below code snippet is automatically added from ./../../src/tokens.scss -->
+
+```scss
+:host {
+  // All colors are deprecated or are using a incorrect named variable
+  --ds-auro-lockup-alaska-logo-color: var(--ds-color-brand-midnight-400, $ds-color-brand-midnight-400);
+  --ds-auro-lockup-divider-color: var(--ds-color-border-ui-disabled-default, $ds-color-border-ui-disabled-default);
+  --ds-auro-lockup-subtitle-color: var(--ds-color-text-ui-disabled-default, $ds-color-text-ui-disabled-default);
+  --ds-auro-lockup-title-color: var(--ds-color-brand-breeze-400, $ds-color-brand-breeze-400);
+}
+```
+<!-- AURO-GENERATED-CONTENT:END -->
