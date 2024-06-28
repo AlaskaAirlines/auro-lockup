@@ -173,6 +173,8 @@ The component may be restyled using the following code sample and changing the v
 <!-- The below code snippet is automatically added from ./../../src/tokens.scss -->
 
 ```scss
+@import './../node_modules/@aurodesignsystem/design-tokens/dist/tokens/SCSSVariables';
+
 :host {
   --ds-auro-lockup-alaska-logo-color: var(--ds-color-brand-lounge, #{$ds-color-brand-lounge});
   --ds-auro-lockup-divider-color: var(--ds-color-border-divider-default, #{$ds-color-border-divider-default});
