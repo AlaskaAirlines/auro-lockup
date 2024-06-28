@@ -1,0 +1,32 @@
+// Copyright (c) 2024 Alaska Airlines. All right reserved. Licensed under the Apache-2.0 license
+// See LICENSE in the project root for license information.
+
+// ---------------------------------------------------------------------
+
+@import './../node_modules/@aurodesignsystem/design-tokens/dist/tokens/SCSSVariables';
+
+.headerLinkBox {
+  color: var(--ds-auro-lockup-alaska-logo-color);
+}
+
+.logoIcon {
+  border-right-color: var(--ds-auro-lockup-divider-color);
+}
+
+.headerTitle {
+  &-title {
+    color: var(--ds-auro-lockup-title-color);
+  }
+
+  &-tagline {
+    color: var(--ds-auro-lockup-subtitle-color);
+  }
+}
+
+:host([onDark]) {
+  --ds-auro-lockup-alaska-logo-color: var(--ds-color-icon-primary-inverse, #{$ds-color-icon-primary-inverse});
+  --ds-auro-lockup-divider-color: var(--ds-color-brand-gray-100, #{$ds-color-brand-gray-100}); // Need tier 2 token for this
+  --ds-auro-lockup-subtitle-color: var(--ds-color-brand-gray-100, #{$ds-color-brand-gray-100}); // Need tier 2 token for this
+  --ds-auro-lockup-title-color: var(--ds-color-brand-gray-100, #{$ds-color-brand-gray-100}); // Need tier 2 token for this
+}
+

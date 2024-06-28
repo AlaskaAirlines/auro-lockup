@@ -1,4 +1,4 @@
-// Copyright (c) 2021 Alaska Airlines. All right reserved. Licensed under the Apache-2.0 license
+// Copyright (c) 2024 Alaska Airlines. All right reserved. Licensed under the Apache-2.0 license
 // See LICENSE in the project root for license information.
 
 // ---------------------------------------------------------------------
@@ -9,32 +9,17 @@
 @import './../node_modules/@aurodesignsystem/webcorestylesheets/src/breakpoints';
 @import './../node_modules/@aurodesignsystem/webcorestylesheets/src/core';
 
-// Support for auroElement styles
-// @import './../node_modules/@aurodesignsystem/webcorestylesheets/dist/auroElement/auroElement';
-
-// container styles - defines the look of the outer custom component
-// :host {
-//   ...
-// }
-
-// layout styles - define any layout specifications for UI that is contained WITHIN the component
-// never define layout that would cause effect on element outside the scope of this component
-
 .headerLinkBox {
   display: flex;
-  color: var(--ds-color-brand-midnight-400, $ds-color-brand-midnight-400); // color for logo
   text-decoration: none;
 }
 
 .logoIcon {
   width: 8rem;
   padding-right: var(--ds-size-100, $ds-size-100);
-  border-right: 1px solid transparent;
+  border-right-width: 1px;
+  border-right-style: solid;
   margin-right: var(--ds-size-100, $ds-size-100);
-}
-
-.logoDivider {
-  border-right-color: var(--ds-color-brand-gray-200, $ds-color-brand-gray-200);
 }
 
 .oneworldLogo {
@@ -54,33 +39,13 @@
 
   &-title {
     padding-bottom: var(--ds-size-50, $ds-size-50);
-    color: var(--ds-color-brand-breeze-400, $ds-color-brand-breeze-400);
     font-size: var(--ds-size-400, $ds-size-400);
     line-height: 1;
   }
 
   &-tagline {
     padding-bottom: var(--ds-size-50, $ds-size-50);
-    color: var(--ds-color-base-gray-700, $ds-color-base-gray-700);
     line-height: 1;
     text-transform: uppercase;
-  }
-}
-
-// -=-=-=-= ondark -=-=-=-=-=-=-=
-:host([onDark]) {
-  .headerLinkBox {
-    color: var(--ds-color-brand-gray-100, $ds-color-brand-gray-100);
-  }
-
-  .logoDivider {
-    border-right-color: var(--ds-color-brand-gray-100, $ds-color-brand-gray-100);
-  }
-
-  .headerTitle {
-    &-title,
-    &-tagline {
-      color: var(--ds-color-brand-gray-100, $ds-color-brand-gray-100);
-    }
   }
 }
