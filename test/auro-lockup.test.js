@@ -2,7 +2,6 @@ import { fixture, html, expect } from '@open-wc/testing';
 import '../src/auro-lockup.js';
 
 describe('auro-lockup', () => {
-
   it('auro-lockup is accessible', async () => {
     const el = await fixture(html`
       <auro-lockup>

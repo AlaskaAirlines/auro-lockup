@@ -15,7 +15,7 @@
 }
 
 .logoIcon {
-  width: 8rem;
+  width: calc(var(--ds-size-800, $ds-size-800) * 2);
   padding-right: var(--ds-size-100, $ds-size-100);
   border-right-width: 1px;
   border-right-style: solid;
@@ -24,7 +24,7 @@
 
 .oneworldLogo {
   display: flex;
-  width: 2.6rem;
+  width: calc(var(--ds-size-500, $ds-size-500) + 0.1rem);
   flex-direction: column;
   justify-content: center;
   padding-left: var(--ds-size-50, $ds-size-50);
