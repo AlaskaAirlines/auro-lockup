@@ -35,8 +35,8 @@ The following table lists the accessibility color information.
 
 | color | token | ratio | rating |
 |---|---|---|---|
-| #099dc5 | | 3.16:1 | Large text - WCAG AA Pass |
-| #767676 | | 4.54:1 | Normal text - WCAG AA Pass |
+| #099dc5 | --ds-color-brand-breeze-400 | 3.16:1 | Large text - WCAG AA Pass |
+| #676767 | --ds-color-base-gray-700 | 5.65:1 | Normal text - WCAG AA Pass |
 
 ## auro-lockup with Oneworld logo
 
