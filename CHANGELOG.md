@@ -1,5 +1,17 @@
 # Semantic Release Automated Changelog
 
+## [3.0.9-beta.1](https://github.com/AlaskaAirlines/auro-lockup/compare/v3.0.8...v3.0.9-beta.1) (2024-08-05)
+
+
+### Performance Improvements
+
+* update subtitle color token [#27](https://github.com/AlaskaAirlines/auro-lockup/issues/27) ([c7f088f](https://github.com/AlaskaAirlines/auro-lockup/commit/c7f088faf9303487c1fce95278e6daa9ae5e9f39))
+
+
+### Reverts
+
+* remove updates to troubleshoot error ([2a14806](https://github.com/AlaskaAirlines/auro-lockup/commit/2a148066b09900a7e2d96f8da751c8e09b213816))
+
 ## [3.0.8](https://github.com/AlaskaAirlines/auro-lockup/compare/v3.0.7...v3.0.8) (2024-02-21)
 
 
