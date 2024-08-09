@@ -1,5 +1,18 @@
 # Semantic Release Automated Changelog
 
+# [3.1.0-beta.1](https://github.com/AlaskaAirlines/auro-lockup/compare/v3.0.9-beta.1...v3.1.0-beta.1) (2024-08-09)
+
+
+### Features
+
+* refactor color token structure with tier 3 tokens [#25](https://github.com/AlaskaAirlines/auro-lockup/issues/25) ([9bee574](https://github.com/AlaskaAirlines/auro-lockup/commit/9bee574695a88e8adf96233e2cc8358f080de9f1))
+
+
+### Performance Improvements
+
+* replace hardcoded size values with tokens ([908c3d8](https://github.com/AlaskaAirlines/auro-lockup/commit/908c3d81190c77b44be75f3e836c795872f592e7))
+* update deps and refactor scripts to run auro-library versions ([25b719d](https://github.com/AlaskaAirlines/auro-lockup/commit/25b719d7970b367d295fc70af632afa1012092ef))
+
 ## [3.0.9-beta.1](https://github.com/AlaskaAirlines/auro-lockup/compare/v3.0.8...v3.0.9-beta.1) (2024-08-05)
 
 
