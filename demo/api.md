@@ -176,10 +176,10 @@ The component may be restyled using the following code sample and changing the v
 @import './../node_modules/@aurodesignsystem/design-tokens/dist/tokens/SCSSVariables';
 
 :host {
-  --ds-auro-lockup-alaska-logo-color: var(--ds-color-brand-lounge, #{$ds-color-brand-lounge});
+  --ds-auro-lockup-alaska-logo-color: var(--ds-color-brand-lounge, #{$ds-color-brand-lounge}); // This is the color of the Alaska logo and needs to be revisited
   --ds-auro-lockup-divider-color: var(--ds-color-border-divider-default, #{$ds-color-border-divider-default});
-  --ds-auro-lockup-subtitle-color: var(--ds-color-base-gray-700, #{$ds-color-base-gray-700}); // Need tier 2 token for this
-  --ds-auro-lockup-title-color: var(--ds-color-brand-breeze-400, #{$ds-color-brand-breeze-400}); // Need tier 2 token for this
+  --ds-auro-lockup-subtitle-color: var(--ds-color-text-tertiary-default, #{$ds-color-text-tertiary-default});
+  --ds-auro-lockup-title-color: var(--ds-color-text-info-default, #{$ds-color-text-info-default});
 }
 ```
 <!-- AURO-GENERATED-CONTENT:END -->
