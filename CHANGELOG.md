@@ -1,5 +1,28 @@
 # Semantic Release Automated Changelog
 
+# [4.0.0-beta.1](https://github.com/AlaskaAirlines/auro-lockup/compare/v3.1.0-beta.1...v4.0.0-beta.1) (2024-10-03)
+
+
+### Bug Fixes
+
+* resolve minor color theming issues ([e555bb3](https://github.com/AlaskaAirlines/auro-lockup/commit/e555bb3254698067b8301e332f1933250c7caf2e))
+
+
+### Features
+
+* add tag name as attribute when custom registered ([13703fc](https://github.com/AlaskaAirlines/auro-lockup/commit/13703fcdbe2a6fad8f2b0431a45ca835786968ac))
+
+
+### Performance Improvements
+
+* refactor custom component registration config ([80b3911](https://github.com/AlaskaAirlines/auro-lockup/commit/80b3911f0bdfdde3848cb2485ded75c91be229bd))
+* update dependencies ([8a9be16](https://github.com/AlaskaAirlines/auro-lockup/commit/8a9be16a2eed6e64c0d86fc34f3efaecf65fc6f7))
+
+
+### BREAKING CHANGES
+
+* trigger major release for color theme support #25
+
 # [3.1.0-beta.1](https://github.com/AlaskaAirlines/auro-lockup/compare/v3.0.9-beta.1...v3.1.0-beta.1) (2024-08-09)
 
 
