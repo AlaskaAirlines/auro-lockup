@@ -1,15 +1,4 @@
 import { AuroLockup } from './src/auro-lockup.js';
+import * as RuntimeUtils from '@aurodesignsystem/auro-library/scripts/utils/runtimeUtils.mjs';
 
-/**
- * Register Custom Element.
- * @param {Object} name - Name to use for custom element.
- * @returns {void}
- */
- const registerComponent = (name = 'custom-lockup') => {
-  // alias definition
-  if (!customElements.get(name)) {
-    customElements.define(name, class extends AuroLockup {});
-  }
-}
-
-export { registerComponent }
+RuntimeUtils.default.prototype.registerComponent('custom-lockup', AuroLockup);
