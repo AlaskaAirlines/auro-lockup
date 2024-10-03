@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [4.0.0-beta.2](https://github.com/AlaskaAirlines/auro-lockup/compare/v4.0.0-beta.1...v4.0.0-beta.2) (2024-10-03)
+
+
+### Bug Fixes
+
+* update ondark styles ([097eb12](https://github.com/AlaskaAirlines/auro-lockup/commit/097eb12e22c95c4a266eaac02c88bb2c759fd36f))
+
 # [4.0.0-beta.1](https://github.com/AlaskaAirlines/auro-lockup/compare/v3.1.0-beta.1...v4.0.0-beta.1) (2024-10-03)
 
 
