@@ -25,8 +25,7 @@
 
 :host([onDark]) {
   --ds-auro-lockup-alaska-logo-color: var(--ds-color-icon-primary-inverse, #{$ds-color-icon-primary-inverse});
-  --ds-auro-lockup-divider-color: var(--ds-color-brand-gray-100, #{$ds-color-brand-gray-100}); // Need tier 2 token for this
-  --ds-auro-lockup-subtitle-color: var(--ds-color-brand-gray-100, #{$ds-color-brand-gray-100}); // Need tier 2 token for this
-  --ds-auro-lockup-title-color: var(--ds-color-brand-gray-100, #{$ds-color-brand-gray-100}); // Need tier 2 token for this
+  --ds-auro-lockup-subtitle-color: var(--ds-color-text-tertiary-inverse, #{$ds-color-text-tertiary-inverse});
+  --ds-auro-lockup-title-color: var(--ds-color-text-subtle-inverse, #{$ds-color-text-subtle-inverse});
 }
 
