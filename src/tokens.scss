@@ -1,7 +1,7 @@
 @import './../node_modules/@aurodesignsystem/design-tokens/dist/tokens/SCSSVariables';
 
 :host {
-  --ds-auro-lockup-alaska-logo-color: var(--ds-color-brand-lounge, #{$ds-color-brand-lounge}); // This is the color of the Alaska logo and needs to be revisited
+  --ds-auro-lockup-alaska-logo-color: var(--ds-color-brand-lounge, #{$ds-color-brand-lounge});
   --ds-auro-lockup-divider-color: var(--ds-color-border-divider-default, #{$ds-color-border-divider-default});
   --ds-auro-lockup-subtitle-color: var(--ds-color-text-tertiary-default, #{$ds-color-text-tertiary-default});
   --ds-auro-lockup-title-color: var(--ds-color-text-info-default, #{$ds-color-text-info-default});
