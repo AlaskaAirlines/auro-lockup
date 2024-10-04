@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [4.0.0-beta.3](https://github.com/AlaskaAirlines/auro-lockup/compare/v4.0.0-beta.2...v4.0.0-beta.3) (2024-10-04)
+
+
+### Bug Fixes
+
+* resolve on dark border color bug ([1cfcc1b](https://github.com/AlaskaAirlines/auro-lockup/commit/1cfcc1b960183b97cb4c676d42385874d17b4a06))
+
 ## [3.0.8](https://github.com/AlaskaAirlines/auro-lockup/compare/v3.0.7...v3.0.8) (2024-02-21)
 
 
