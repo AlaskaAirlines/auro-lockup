@@ -1,5 +1,39 @@
 # Semantic Release Automated Changelog
 
+# [4.0.0](https://github.com/AlaskaAirlines/auro-lockup/compare/v3.0.8...v4.0.0) (2024-10-04)
+
+
+### Bug Fixes
+
+* resolve minor color theming issues ([9fd54fc](https://github.com/AlaskaAirlines/auro-lockup/commit/9fd54fc0a2e7c3c66fe3d9ed70dfede4d8be55d1))
+* resolve on dark border color bug ([9ad6519](https://github.com/AlaskaAirlines/auro-lockup/commit/9ad651947e78761f156c63efed30962c30e55338))
+* update ondark styles ([4b963b8](https://github.com/AlaskaAirlines/auro-lockup/commit/4b963b87f810591c177ecd6baa74ef3d7871f9be))
+
+
+### Features
+
+* add tag name as attribute when custom registered ([454f660](https://github.com/AlaskaAirlines/auro-lockup/commit/454f6602138ecb65c217622567e4735c790c8385))
+* refactor color token structure with tier 3 tokens [#25](https://github.com/AlaskaAirlines/auro-lockup/issues/25) ([756a31c](https://github.com/AlaskaAirlines/auro-lockup/commit/756a31cbbc9cef1a9f506084ee465ec4909b9602))
+
+
+### Performance Improvements
+
+* refactor custom component registration config ([e0555d2](https://github.com/AlaskaAirlines/auro-lockup/commit/e0555d2747b25470d8353e1d0d3c670a41379675))
+* replace hardcoded size values with tokens ([d536476](https://github.com/AlaskaAirlines/auro-lockup/commit/d536476ce8ba8582368ba332d9dd6a69bd69820c))
+* update dependencies ([1b1213a](https://github.com/AlaskaAirlines/auro-lockup/commit/1b1213ade20acd0eac731dfc993846bb4131644b))
+* update deps and refactor scripts to run auro-library versions ([f579b29](https://github.com/AlaskaAirlines/auro-lockup/commit/f579b29b1c50c95d7e3c0ef64d59b9bef73fbc92))
+* update subtitle color token [#27](https://github.com/AlaskaAirlines/auro-lockup/issues/27) ([5b751b3](https://github.com/AlaskaAirlines/auro-lockup/commit/5b751b3d9727d7e2af65b645826e9c34c83c6578))
+
+
+### Reverts
+
+* remove updates to troubleshoot error ([2a14806](https://github.com/AlaskaAirlines/auro-lockup/commit/2a148066b09900a7e2d96f8da751c8e09b213816))
+
+
+### BREAKING CHANGES
+
+* trigger major release for color theme support #25
+
 ## [3.0.8](https://github.com/AlaskaAirlines/auro-lockup/compare/v3.0.7...v3.0.8) (2024-02-21)
 
 
