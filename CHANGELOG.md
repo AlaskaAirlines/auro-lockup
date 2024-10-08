@@ -1,5 +1,13 @@
 # Semantic Release Automated Changelog
 
+## [4.0.1](https://github.com/AlaskaAirlines/auro-lockup/compare/v4.0.0...v4.0.1) (2024-10-08)
+
+
+### Bug Fixes
+
+* moves auro library to dependencies in package.json [#36](https://github.com/AlaskaAirlines/auro-lockup/issues/36) ([2ef5f82](https://github.com/AlaskaAirlines/auro-lockup/commit/2ef5f821553e324883f32d77069c6f1a8d7f0873))
+* moving Library out of peerDependencies [#36](https://github.com/AlaskaAirlines/auro-lockup/issues/36) ([837da39](https://github.com/AlaskaAirlines/auro-lockup/commit/837da39be51430e23705b31f63e131b00711b5fe))
+
 # [4.0.0](https://github.com/AlaskaAirlines/auro-lockup/compare/v3.0.8...v4.0.0) (2024-10-04)
 
 
