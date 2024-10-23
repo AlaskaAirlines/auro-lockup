@@ -1,5 +1,17 @@
 # Semantic Release Automated Changelog
 
+# [4.1.0](https://github.com/AlaskaAirlines/auro-lockup/compare/v4.0.1...v4.1.0) (2024-10-23)
+
+
+### Features
+
+* **api:** add register static method [#38](https://github.com/AlaskaAirlines/auro-lockup/issues/38) ([2c07324](https://github.com/AlaskaAirlines/auro-lockup/commit/2c0732436dafacc12736aeef379f18a074588ec6))
+
+
+### Performance Improvements
+
+* update dependency versions ([c730b5c](https://github.com/AlaskaAirlines/auro-lockup/commit/c730b5c4e78c7b92482a7f469527e6c8dfabcb9f))
+
 ## [4.0.1](https://github.com/AlaskaAirlines/auro-lockup/compare/v4.0.0...v4.0.1) (2024-10-08)
 
 
