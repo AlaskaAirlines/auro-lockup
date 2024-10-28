@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [4.1.1](https://github.com/AlaskaAirlines/auro-lockup/compare/v4.1.0...v4.1.1) (2024-10-28)
+
+
+### Bug Fixes
+
+* revert WCSS version [#40](https://github.com/AlaskaAirlines/auro-lockup/issues/40) ([cadc4fe](https://github.com/AlaskaAirlines/auro-lockup/commit/cadc4fec5558c70f0ea3de2ecda4c16776cda27d))
+
 # [4.1.0](https://github.com/AlaskaAirlines/auro-lockup/compare/v4.0.1...v4.1.0) (2024-10-23)
 
 
