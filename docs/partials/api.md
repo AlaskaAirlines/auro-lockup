@@ -1,4 +1,4 @@
-<!-- AURO-GENERATED-CONTENT:START (FILE:src=./../api.md) -->
+<!-- AURO-GENERATED-CONTENT:START (FILE:src=../docs/api.md) -->
 <!-- AURO-GENERATED-CONTENT:END -->
 
 ## API Examples
@@ -12,13 +12,13 @@ See the following examples for use-case illustrations of API options.
 Use the `onDark` attribute for the proper presentation on a darker background.
 
 <div class="exampleWrapper--ondark">
-  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/onDarkExample.html) -->
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=../apiExamples/onDarkExample.html) -->
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 <auro-accordion alignRight>
   <span slot="trigger">See code</span>
 
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/onDarkExample.html) -->
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=../apiExamples/onDarkExample.html) -->
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
@@ -30,13 +30,13 @@ Use the `onDark` attribute for the proper presentation on a darker background.
 Use the `oneWorld` property to replace the product name and tag line with one**World** logo.
 
 <div class="exampleWrapper">
-  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/oneWorld.html) -->
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=../apiExamples/oneWorld.html) -->
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 <auro-accordion alignRight>
   <span slot="trigger">See code</span>
 
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/oneWorld.html) -->
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=../apiExamples/oneWorld.html) -->
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
@@ -46,13 +46,13 @@ Use the `oneWorld` property to replace the product name and tag line with one**W
 Use the `path` property to add a custom URL reference to the clickable lockup. A `/` is set by default.
 
 <div class="exampleWrapper">
-  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/path.html) -->
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=../apiExamples/path.html) -->
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 <auro-accordion alignRight>
   <span slot="trigger">See code</span>
 
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/path.html) -->
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=../apiExamples/path.html) -->
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
@@ -62,13 +62,13 @@ Use the `path` property to add a custom URL reference to the clickable lockup. A
 Use the `standard` property to use the standard Alaska logo in place of the official logo. Restricted to use with the one**World** logo.
 
 <div class="exampleWrapper">
-  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/standard.html) -->
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=../apiExamples/standard.html) -->
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 <auro-accordion alignRight>
   <span slot="trigger">See code</span>
 
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/standard.html) -->
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=../apiExamples/standard.html) -->
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
@@ -80,13 +80,13 @@ Use the `standard` property to use the standard Alaska logo in place of the offi
 Usd the `title` slot to add lockup content.
 
 <div class="exampleWrapper">
-  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/title.html) -->
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=../apiExamples/title.html) -->
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 <auro-accordion alignRight>
   <span slot="trigger">See code</span>
 
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/title.html) -->
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=../apiExamples/title.html) -->
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
@@ -96,13 +96,13 @@ Usd the `title` slot to add lockup content.
 Usd the `subtitle` slot to add lockup content.
 
 <div class="exampleWrapper">
-  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/subtitle.html) -->
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=../apiExamples/subtitle.html) -->
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 <auro-accordion alignRight>
   <span slot="trigger">See code</span>
 
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/subtitle.html) -->
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=../apiExamples/subtitle.html) -->
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
@@ -111,6 +111,6 @@ Usd the `subtitle` slot to add lockup content.
 
 The component may be restyled using the following code sample and changing the values of the following token(s).
 
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../src/tokens.scss) -->
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=../src/tokens.scss) -->
 <!-- AURO-GENERATED-CONTENT:END -->
 
