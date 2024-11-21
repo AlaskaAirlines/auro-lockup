@@ -118,7 +118,7 @@ Use the `standard` property to use the standard Alaska logo in place of the offi
 ### Slot Examples
 
 #### <a name="title"></a>`title`<a href="#" style="float: right; font-size: 1rem; font-weight: 100;">back to top</a>
-Usd the `title` slot to add lockup content.
+Use the `title` slot to add lockup content.
 
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=../apiExamples/title.html) -->
@@ -142,7 +142,7 @@ Usd the `title` slot to add lockup content.
 </auro-accordion>
 
 #### <a name="subtitle"></a>`subtitle`<a href="#" style="float: right; font-size: 1rem; font-weight: 100;">back to top</a>
-Usd the `subtitle` slot to add lockup content.
+Use the `subtitle` slot to add lockup content.
 
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=../apiExamples/subtitle.html) -->
