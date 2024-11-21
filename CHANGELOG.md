@@ -1,5 +1,17 @@
 # Semantic Release Automated Changelog
 
+## [4.1.2](https://github.com/AlaskaAirlines/auro-lockup/compare/v4.1.1...v4.1.2) (2024-11-21)
+
+
+### Bug Fixes
+
+* update markdown partial pathing to consume new auro lib [#42](https://github.com/AlaskaAirlines/auro-lockup/issues/42) ([645c7ce](https://github.com/AlaskaAirlines/auro-lockup/commit/645c7ce0963a0d23c8a05c9acbcd7513e4705e81))
+
+
+### Performance Improvements
+
+* update library to 3.0.2 ([34e5744](https://github.com/AlaskaAirlines/auro-lockup/commit/34e574411cef9f60a944e80193ec6589eb705cda))
+
 ## [4.1.1](https://github.com/AlaskaAirlines/auro-lockup/compare/v4.1.0...v4.1.1) (2024-10-28)
 
 
