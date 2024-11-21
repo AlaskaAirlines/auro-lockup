@@ -77,7 +77,7 @@ Use the `standard` property to use the standard Alaska logo in place of the offi
 
 #### `title`
 
-Usd the `title` slot to add lockup content.
+Use the `title` slot to add lockup content.
 
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=../apiExamples/title.html) -->
@@ -93,7 +93,7 @@ Usd the `title` slot to add lockup content.
 
 #### `subtitle`
 
-Usd the `subtitle` slot to add lockup content.
+Use the `subtitle` slot to add lockup content.
 
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=../apiExamples/subtitle.html) -->
