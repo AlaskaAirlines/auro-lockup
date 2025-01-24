@@ -1,5 +1,17 @@
 # Semantic Release Automated Changelog
 
+# [4.2.0](https://github.com/AlaskaAirlines/auro-lockup/compare/v4.1.3...v4.2.0) (2025-01-24)
+
+
+### Features
+
+* add `variant` attribute [#48](https://github.com/AlaskaAirlines/auro-lockup/issues/48) ([f576c89](https://github.com/AlaskaAirlines/auro-lockup/commit/f576c893a9b36725eca8215ff3a085d11fa53a72))
+
+
+### Performance Improvements
+
+* update deps ([0314128](https://github.com/AlaskaAirlines/auro-lockup/commit/0314128b1fe75cd3d58a8c85d47d8aa104a7cba7))
+
 ## [4.1.3](https://github.com/AlaskaAirlines/auro-lockup/compare/v4.1.2...v4.1.3) (2024-12-22)
 
 

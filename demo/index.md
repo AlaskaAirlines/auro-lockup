@@ -7,44 +7,26 @@ This file is generated based on a template fetched from `../docs/partials/index.
 # Lockup
 
 <!-- AURO-GENERATED-CONTENT:START (FILE:src=../docs/partials/description.md) -->
-<!-- The below content is automatically added from ../docs/partials/description.md -->
-The `auro-lockup` HTML custom element is a standardized use case element for authorized Alaska Airlines extended experiences.
 <!-- AURO-GENERATED-CONTENT:END -->
 
 ## auro-lockup use cases
 
 <!-- AURO-GENERATED-CONTENT:START (FILE:src=../docs/partials/useCases.md) -->
-<!-- The below content is automatically added from ../docs/partials/useCases.md -->
-The `auro-lockup` use cases include:
-
-* Product lines
-* Partner services
-* Auxiliary sites
 <!-- AURO-GENERATED-CONTENT:END -->
 
 ## auro-lockup default use
 
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=../apiExamples/basic.html) -->
-  <!-- The below content is automatically added from ../apiExamples/basic.html -->
-  <auro-lockup>
-    <span slot="title">Place title text here</span>
-    <span slot="subtitle">Place subtitle text here</span>
-  </auro-lockup>
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
+
 <auro-accordion alignRight>
   <span slot="trigger">See code</span>
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=../apiExamples/basic.html) -->
-<!-- The below code snippet is automatically added from ../apiExamples/basic.html -->
 
-```html
-<auro-lockup>
-  <span slot="title">Place title text here</span>
-  <span slot="subtitle">Place subtitle text here</span>
-</auro-lockup>
-```
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=../apiExamples/basic.html) -->
 <!-- AURO-GENERATED-CONTENT:END -->
+
 </auro-accordion>
 
 ## auro-lockup with Oneworld logo
@@ -55,19 +37,15 @@ The `standard` property is only supported with the `oneworld` option.
 
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=../apiExamples/oneworldStandard.html) -->
-  <!-- The below content is automatically added from ../apiExamples/oneworldStandard.html -->
-  <auro-lockup standard variant="oneworld"></auro-lockup>
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
+
 <auro-accordion alignRight>
   <span slot="trigger">See code</span>
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=../apiExamples/oneworldStandard.html) -->
-<!-- The below code snippet is automatically added from ../apiExamples/oneworldStandard.html -->
 
-```html
-<auro-lockup standard variant="oneworld"></auro-lockup>
-```
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=../apiExamples/oneworldStandard.html) -->
 <!-- AURO-GENERATED-CONTENT:END -->
+
 </auro-accordion>
 
 ## auro-lockup onDark
@@ -76,57 +54,41 @@ For lockup use with dark backgrounds or a dark mode, use the `onDark` attribute.
 
 <div class="exampleWrapper--ondark">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=../apiExamples/onDark.html) -->
-  <!-- The below content is automatically added from ../apiExamples/onDark.html -->
-  <auro-lockup onDark>
-    <span slot="title">Product Name</span>
-    <span slot="subtitle">Powered by Partner Name</span>
-  </auro-lockup>
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
+
 <auro-accordion alignRight>
   <span slot="trigger">See code</span>
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=../apiExamples/onDark.html) -->
-<!-- The below code snippet is automatically added from ../apiExamples/onDark.html -->
 
-```html
-<auro-lockup onDark>
-  <span slot="title">Product Name</span>
-  <span slot="subtitle">Powered by Partner Name</span>
-</auro-lockup>
-```
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=../apiExamples/onDark.html) -->
 <!-- AURO-GENERATED-CONTENT:END -->
+
 </auro-accordion>
+
 <div class="exampleWrapper--ondark">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=../apiExamples/onDark-2.html) -->
-  <!-- The below content is automatically added from ../apiExamples/onDark-2.html -->
-  <auro-lockup onDark variant="oneworld"></auro-lockup>
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
+
 <auro-accordion alignRight>
   <span slot="trigger">See code</span>
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=../apiExamples/onDark-2.html) -->
-<!-- The below code snippet is automatically added from ../apiExamples/onDark-2.html -->
 
-```html
-<auro-lockup onDark variant="oneworld"></auro-lockup>
-```
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=../apiExamples/onDark-2.html) -->
 <!-- AURO-GENERATED-CONTENT:END -->
+
 </auro-accordion>
+
 <div class="exampleWrapper--ondark">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=../apiExamples/onDark-3.html) -->
-  <!-- The below content is automatically added from ../apiExamples/onDark-3.html -->
-  <auro-lockup onDark standard variant="oneworld"></auro-lockup>
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
+
 <auro-accordion alignRight>
   <span slot="trigger">See code</span>
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=../apiExamples/onDark-3.html) -->
-<!-- The below code snippet is automatically added from ../apiExamples/onDark-3.html -->
 
-```html
-<auro-lockup onDark standard variant="oneworld"></auro-lockup>
-```
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=../apiExamples/onDark-3.html) -->
 <!-- AURO-GENERATED-CONTENT:END -->
+
 </auro-accordion>
 
 ## Recommended Use and Version Control
@@ -145,23 +107,10 @@ This will create a new custom element that you can use in your HTML that will fu
 
 <div class="exampleWrapper exampleWrapper--flex">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=../apiExamples/custom.html) -->
-  <!-- The below content is automatically added from ../apiExamples/custom.html -->
-  <custom-lockup>
-    <span slot="title">Place title text here</span>
-    <span slot="subtitle">Place subtitle text here</span>
-  </custom-lockup>
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 <auro-accordion alignRight>
   <span slot="trigger">See code</span>
 <!-- AURO-GENERATED-CONTENT:START (CODE:src=../apiExamples/custom.html) -->
-<!-- The below code snippet is automatically added from ../apiExamples/custom.html -->
-
-```html
-<custom-lockup>
-  <span slot="title">Place title text here</span>
-  <span slot="subtitle">Place subtitle text here</span>
-</custom-lockup>
-```
 <!-- AURO-GENERATED-CONTENT:END -->
 </auro-accordion>
