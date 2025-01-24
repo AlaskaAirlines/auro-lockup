@@ -31,19 +31,19 @@ This file is generated based on a template fetched from `../docs/partials/index.
 
 ## auro-lockup with Oneworld logo
 
-The following examples illustrate the standard and official versions of the Alaska logo. By default the official versions of the Alaska logo is used. Use the `standard` attribute to display the Alaska logo sans the tagline.
+The following examples illustrate the standard and official versions of the Alaska logo. By default, the official version of the Alaska logo is used. Use the `standard` attribute to display the Alaska logo sans the tagline.
 
 The `standard` property is only supported with the `oneworld` option.
 
 <div class="exampleWrapper">
-  <!-- AURO-GENERATED-CONTENT:START (FILE:src=../apiExamples/oneWorldStandard.html) -->
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=../apiExamples/oneworldStandard.html) -->
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 
 <auro-accordion alignRight>
   <span slot="trigger">See code</span>
 
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=../apiExamples/oneWorldStandard.html) -->
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=../apiExamples/oneworldStandard.html) -->
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>

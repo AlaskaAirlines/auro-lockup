@@ -30,13 +30,13 @@ Use the `onDark` attribute for the proper presentation on a darker background.
 Use the `oneWorld` property to replace the product name and tag line with one**World** logo.
 
 <div class="exampleWrapper">
-  <!-- AURO-GENERATED-CONTENT:START (FILE:src=../apiExamples/oneWorld.html) -->
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=../apiExamples/oneworld.html) -->
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 <auro-accordion alignRight>
   <span slot="trigger">See code</span>
 
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=../apiExamples/oneWorld.html) -->
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=../apiExamples/oneworld.html) -->
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
