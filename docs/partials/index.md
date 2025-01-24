@@ -29,15 +29,6 @@ This file is generated based on a template fetched from `../docs/partials/index.
 
 </auro-accordion>
 
-## Accessibility
-
-The following table lists the accessibility color information.
-
-| color | token | ratio | rating |
-|---|---|---|---|
-| #099dc5 | --ds-color-brand-breeze-400 | 3.16:1 | Large text - WCAG AA Pass |
-| #676767 | --ds-color-base-gray-700 | 5.65:1 | Normal text - WCAG AA Pass |
-
 ## auro-lockup with Oneworld logo
 
 The following examples illustrate the standard and official versions of the Alaska logo. By default the official versions of the Alaska logo is used. Use the `standard` attribute to display the Alaska logo sans the tagline.
