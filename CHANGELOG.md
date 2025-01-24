@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [4.2.1](https://github.com/AlaskaAirlines/auro-lockup/compare/v4.2.0...v4.2.1) (2025-01-24)
+
+
+### Performance Improvements
+
+* remove cached .md files [#50](https://github.com/AlaskaAirlines/auro-lockup/issues/50) ([cd75809](https://github.com/AlaskaAirlines/auro-lockup/commit/cd7580989e4fd8a40b04a69ad35ca6ed9a676ae3))
+
 # [4.2.0](https://github.com/AlaskaAirlines/auro-lockup/compare/v4.1.3...v4.2.0) (2025-01-24)
 
 
