@@ -51,8 +51,7 @@ export class AuroLockup extends LitElement {
        * URL path for lockup link.
        */
       path: {
-        type: String,
-        reflect: true
+        type: String
       },
 
       /**
@@ -62,6 +61,14 @@ export class AuroLockup extends LitElement {
         type: Boolean,
         reflect: true
       },
+
+      /**
+       * Sets lockup variant option. Only possible value is `oneworld`.
+       */
+      variant: {
+        type: String,
+        reflect: true
+      }
     };
   }
 
@@ -90,6 +97,13 @@ export class AuroLockup extends LitElement {
     this.runtimeUtils.handleComponentTagRename(this, 'auro-lockup');
   }
 
+  updated() {
+    // Support deprecated oneworld attribute
+    if (this.oneworld) {
+      this.setAttribute('variant', 'oneworld');
+    }
+  }
+
   /**
    * @private
    * @param {string} svgContent - The imported svg icon.
@@ -109,18 +123,18 @@ export class AuroLockup extends LitElement {
   render() {
     const classes = {
       'logoIcon': true,
-      'logoDivider': !this.oneworld
+      'logoDivider': !this.variant
     };
 
     return html`
       <a href=${this.path} class="headerLinkBox">
         <div class="${classMap(classes)}">
-          ${ifDefined(this.standard && this.oneworld
+          ${ifDefined(this.standard && this.variant === 'oneworld'
             ? this.generateIconHtml(logoStandard.svg)
             : this.generateIconHtml(logoOfficial.svg))
           }
         </div>
-        ${ifDefined(this.oneworld ? html`
+        ${ifDefined(this.variant === 'oneworld' ? html`
           <div class="oneworldLogo">
             ${this.generateIconHtml(logoOneworld.svg)}
           </div>
