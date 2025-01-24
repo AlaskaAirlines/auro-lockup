@@ -19,9 +19,9 @@ describe('auro-lockup', () => {
     await expect(el).to.be.true;
   });
 
-  it('auro-lockup onworld attribute replaces product and tagline with oneworld logo', async () => {
+  it('auro-lockup variant="oneworld" attribute replaces product and tagline with oneworld logo', async () => {
     const el = await fixture(html`
-      <auro-lockup oneworld></auro-lockup>
+      <auro-lockup variant="oneworld"></auro-lockup>
     `);
 
     const logo = el.shadowRoot.querySelector('.oneworldLogo');
@@ -33,7 +33,7 @@ describe('auro-lockup', () => {
 
   it('auro-lockup oneworld logo with standard Alaska logo sans tagline', async () => {
     const el = await fixture(html`
-      <auro-lockup oneworld standard></auro-lockup>
+      <auro-lockup variant="oneworld" standard></auro-lockup>
     `);
 
     const logo = el.shadowRoot.querySelector('.oneworldLogo');

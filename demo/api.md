@@ -15,9 +15,10 @@ The auro-lockup element is a standardized custom element for the use in headers 
 
 | Property   | Attribute  | Type      | Default | Description                                      |
 |------------|------------|-----------|---------|--------------------------------------------------|
-| [oneworld](#oneworld) | `oneworld` | `boolean` | false   | (DEPRECATED) Replaces product name and tag line with Oneworld logo |
+| [oneworld](#oneworld) | `oneworld` | `boolean` | false   | (DEPRECATED) Replaces product name and tag line with Oneworld logo. |
 | [path](#path)     | `path`     | `string`  | "/"     | URL path for lockup link.                        |
 | [standard](#standard) | `standard` | `boolean` | false   | Uses the standard Alaska logo in place of the official logo, requires use of `oneWorld` attribute. |
+| [variant](#variant)  | `variant`  | `string`  |         | Sets lockup variant option. Only possible value is `oneworld`. |
 
 ## Slots
 
@@ -61,7 +62,7 @@ Use the `oneWorld` property to replace the product name and tag line with one**W
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=../apiExamples/oneWorld.html) -->
   <!-- The below content is automatically added from ../apiExamples/oneWorld.html -->
-  <auro-lockup oneworld></auro-lockup>
+  <auro-lockup variant="oneworld"></auro-lockup>
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 <auro-accordion alignRight>
@@ -70,7 +71,7 @@ Use the `oneWorld` property to replace the product name and tag line with one**W
 <!-- The below code snippet is automatically added from ../apiExamples/oneWorld.html -->
 
 ```html
-<auro-lockup oneworld></auro-lockup>
+<auro-lockup variant="oneworld"></auro-lockup>
 ```
 <!-- AURO-GENERATED-CONTENT:END -->
 </auro-accordion>

@@ -65,7 +65,7 @@ The `standard` property is only supported with the `oneworld` option.
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=../apiExamples/oneWorldStandard.html) -->
   <!-- The below content is automatically added from ../apiExamples/oneWorldStandard.html -->
-  <auro-lockup standard oneworld></auro-lockup>
+  <auro-lockup standard variant="oneworld"></auro-lockup>
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 <auro-accordion alignRight>
@@ -74,7 +74,7 @@ The `standard` property is only supported with the `oneworld` option.
 <!-- The below code snippet is automatically added from ../apiExamples/oneWorldStandard.html -->
 
 ```html
-<auro-lockup standard oneworld></auro-lockup>
+<auro-lockup standard variant="oneworld"></auro-lockup>
 ```
 <!-- AURO-GENERATED-CONTENT:END -->
 </auro-accordion>
@@ -108,7 +108,7 @@ For lockup use with dark backgrounds or a dark mode, use the `onDark` attribute.
 <div class="exampleWrapper--ondark">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=../apiExamples/onDark-2.html) -->
   <!-- The below content is automatically added from ../apiExamples/onDark-2.html -->
-  <auro-lockup onDark oneworld></auro-lockup>
+  <auro-lockup onDark variant="oneworld"></auro-lockup>
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 <auro-accordion alignRight>
@@ -117,14 +117,14 @@ For lockup use with dark backgrounds or a dark mode, use the `onDark` attribute.
 <!-- The below code snippet is automatically added from ../apiExamples/onDark-2.html -->
 
 ```html
-<auro-lockup onDark oneworld></auro-lockup>
+<auro-lockup onDark variant="oneworld"></auro-lockup>
 ```
 <!-- AURO-GENERATED-CONTENT:END -->
 </auro-accordion>
 <div class="exampleWrapper--ondark">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=../apiExamples/onDark-3.html) -->
   <!-- The below content is automatically added from ../apiExamples/onDark-3.html -->
-  <auro-lockup onDark standard oneworld></auro-lockup>
+  <auro-lockup onDark standard variant="oneworld"></auro-lockup>
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 <auro-accordion alignRight>
@@ -133,7 +133,7 @@ For lockup use with dark backgrounds or a dark mode, use the `onDark` attribute.
 <!-- The below code snippet is automatically added from ../apiExamples/onDark-3.html -->
 
 ```html
-<auro-lockup onDark standard oneworld></auro-lockup>
+<auro-lockup onDark standard variant="oneworld"></auro-lockup>
 ```
 <!-- AURO-GENERATED-CONTENT:END -->
 </auro-accordion>
