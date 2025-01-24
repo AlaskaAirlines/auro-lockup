@@ -20,19 +20,6 @@ import tokensCss from "./tokens-css.js";
 
 import AuroLibraryRuntimeUtils from '@aurodesignsystem/auro-library/scripts/utils/runtimeUtils.mjs';
 
-// See https://git.io/JJ6SJ for "How to document your components using JSDoc"
-/**
- * The auro-lockup element is a standardized custom element for the use in headers of Alaska Airlines extended experiences.
- *
- * @attr {String} path - URL path for lockup link
- * @attr {Boolean} onDark - Toggle onDark UI
- * @slot title - Set title for lockup
- * @slot subtitle - Set sub-title for lockup
- * @attr {boolean} standard - uses the standard Alaska logo in place of the official logo, requires use of `oneWorld` attribute.
- * @attr {boolean} oneworld - replaces product name and tag line with Oneworld logo
- */
-
-// build the component class
 export class AuroLockup extends LitElement {
   constructor() {
     super();
@@ -51,15 +38,30 @@ export class AuroLockup extends LitElement {
   static get properties() {
     return {
       // ...super.properties,
-      path: {
-        type: String
-      },
-      standard: {
-        type: Boolean
-      },
+
+      /**
+       * (DEPRECATED) Replaces product name and tag line with Oneworld logo.
+       */
       oneworld: {
-        type: Boolean
-      }
+        type: Boolean,
+        reflect: true
+      },
+
+      /**
+       * URL path for lockup link.
+       */
+      path: {
+        type: String,
+        reflect: true
+      },
+
+      /**
+       * Uses the standard Alaska logo in place of the official logo, requires use of `oneWorld` attribute.
+       */
+      standard: {
+        type: Boolean,
+        reflect: true
+      },
     };
   }
 

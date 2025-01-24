@@ -4,17 +4,17 @@ The auro-lockup element is a standardized custom element for the use in headers 
 
 ## Attributes
 
-| Attribute | Type      | Description      |
-|-----------|-----------|------------------|
-| `onDark`  | `Boolean` | Toggle onDark UI |
+| Attribute | Type      | Description       |
+|-----------|-----------|-------------------|
+| `onDark`  | `Boolean` | Toggle onDark UI. |
 
 ## Properties
 
 | Property   | Attribute  | Type      | Default | Description                                      |
 |------------|------------|-----------|---------|--------------------------------------------------|
-| `oneworld` | `oneworld` | `boolean` | false   | replaces product name and tag line with Oneworld logo |
-| `path`     | `path`     | `String`  | "/"     | URL path for lockup link                         |
-| `standard` | `standard` | `boolean` | false   | uses the standard Alaska logo in place of the official logo, requires use of `oneWorld` attribute. |
+| `oneworld` | `oneworld` | `boolean` | false   | (DEPRECATED) Replaces product name and tag line with Oneworld logo |
+| `path`     | `path`     | `string`  | "/"     | URL path for lockup link.                        |
+| `standard` | `standard` | `boolean` | false   | Uses the standard Alaska logo in place of the official logo, requires use of `oneWorld` attribute. |
 
 ## Slots
 
