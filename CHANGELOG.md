@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [4.2.2](https://github.com/AlaskaAirlines/auro-lockup/compare/v4.2.1...v4.2.2) (2025-01-27)
+
+
+### Bug Fixes
+
+* update oneworld example file names [#52](https://github.com/AlaskaAirlines/auro-lockup/issues/52) ([571647e](https://github.com/AlaskaAirlines/auro-lockup/commit/571647e1b9f7c19736d786e83204dcbd89e255c2))
+
 ## [4.2.1](https://github.com/AlaskaAirlines/auro-lockup/compare/v4.2.0...v4.2.1) (2025-01-24)
 
 
