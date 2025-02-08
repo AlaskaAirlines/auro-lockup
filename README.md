@@ -98,8 +98,8 @@ In cases where the project is not able to process JS assets, there are pre-proce
 
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@aurodesignsystem/design-tokens@4.13.0/dist/tokens/CSSCustomProperties.css" />
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@aurodesignsystem/webcorestylesheets@5.1.2/dist/bundled/essentials.css" />
-<script src="https://cdn.jsdelivr.net/npm/@aurodesignsystem/auro-lockup@4.2.2/dist/auro-lockup__bundled.js" type="module"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@aurodesignsystem/webcorestylesheets@6.0.2/dist/bundled/essentials.css" />
+<script src="https://cdn.jsdelivr.net/npm/@aurodesignsystem/auro-lockup@4.2.3/dist/auro-lockup__bundled.js" type="module"></script>
 ```
 
 <!-- AURO-GENERATED-CONTENT:END -->
