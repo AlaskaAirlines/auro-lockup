@@ -1,5 +1,20 @@
 # Semantic Release Automated Changelog
 
+# [5.0.0](https://github.com/AlaskaAirlines/auro-lockup/compare/v4.2.3...v5.0.0) (2025-02-28)
+
+
+* feat!: move peer dependencies to "real" dependencies ([1ae649c](https://github.com/AlaskaAirlines/auro-lockup/commit/1ae649c62ea8c5652b72f8ce2da9694782473153))
+
+
+### BREAKING CHANGES
+
+* last change was breaking _on a patch version_ because of peer dependencies
+
+Summary:
+  Our current build process relies on peer dependencies being present, but
+  the peer dependency pipeline is causing far more issues than it's worth.
+  Why not just make them regular dependencies? This is what this PR does :)
+
 ## [4.2.3](https://github.com/AlaskaAirlines/auro-lockup/compare/v4.2.2...v4.2.3) (2025-02-08)
 
 
