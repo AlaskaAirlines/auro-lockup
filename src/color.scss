@@ -3,7 +3,8 @@
 
 // ---------------------------------------------------------------------
 
-@import './../node_modules/@aurodesignsystem/design-tokens/dist/tokens/SCSSVariables';
+@import "./../node_modules/@aurodesignsystem/design-tokens/dist/auro-classic/SCSSVariables";
+@import "./../node_modules/@aurodesignsystem/design-tokens/dist/alaska/SCSSVariables--alaska";
 
 .headerLinkBox {
   color: var(--ds-auro-lockup-alaska-logo-color);
@@ -24,9 +25,9 @@
 }
 
 :host([onDark]) {
-  --ds-auro-lockup-alaska-logo-color: var(--ds-color-icon-primary-inverse, #{$ds-color-icon-primary-inverse});
-  --ds-auro-lockup-divider-color: var(--ds-color-border-divider-inverse, #{$ds-color-border-divider-inverse});
-  --ds-auro-lockup-subtitle-color: var(--ds-color-text-tertiary-inverse, #{$ds-color-text-tertiary-inverse});
-  --ds-auro-lockup-title-color: var(--ds-color-text-subtle-inverse, #{$ds-color-text-subtle-inverse});
+  --ds-auro-lockup-alaska-logo-color: #FFF; // Hard-coded to prevent customization of Alaska Airlines logo color
+  --ds-auro-lockup-divider-color: var(--ds-basic-color-border-divider-inverse, #{$ds-basic-color-border-divider-inverse});
+  --ds-auro-lockup-subtitle-color: var(--ds-basic-color-texticon-inverse, #{$ds-basic-color-texticon-inverse});
+  --ds-auro-lockup-title-color: var(--ds-basic-color-texticon-inverse, #{$ds-basic-color-texticon-inverse});
 }
 
