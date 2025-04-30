@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [5.1.0](https://github.com/AlaskaAirlines/auro-lockup/compare/v5.0.0...v5.1.0) (2025-04-30)
+
+
+### Features
+
+* update to use new color theme tokens [#59](https://github.com/AlaskaAirlines/auro-lockup/issues/59) ([a912fd2](https://github.com/AlaskaAirlines/auro-lockup/commit/a912fd2528b307c06bdcaf81c247c4bb83a45526))
+
 # [5.0.0](https://github.com/AlaskaAirlines/auro-lockup/compare/v4.2.3...v5.0.0) (2025-02-28)
 
 
