@@ -1,5 +1,13 @@
 # Semantic Release Automated Changelog
 
+## [5.1.1](https://github.com/AlaskaAirlines/auro-lockup/compare/v5.1.0...v5.1.1) (2025-07-09)
+
+
+### Bug Fixes
+
+* add themable type classes ([5421b43](https://github.com/AlaskaAirlines/auro-lockup/commit/5421b43441d321ff76758487472fc820f08dc235))
+* update docs head content ([201f915](https://github.com/AlaskaAirlines/auro-lockup/commit/201f915bfbe1aec7638c6ffb76560870e1f4caef))
+
 # [5.1.0](https://github.com/AlaskaAirlines/auro-lockup/compare/v5.0.0...v5.1.0) (2025-04-30)
 
 
