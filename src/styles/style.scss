@@ -1,0 +1,46 @@
+// Copyright (c) 2024 Alaska Airlines. All right reserved. Licensed under the Apache-2.0 license
+// See LICENSE in the project root for license information.
+
+// ---------------------------------------------------------------------
+
+// Import Auro tokens
+@use "@aurodesignsystem/design-tokens/dist/legacy/auro-classic/SCSSVariables" as vac;
+@use "@aurodesignsystem/design-tokens/dist/themes/alaska/SCSSVariables--alaska" as v;
+
+@use "@aurodesignsystem/webcorestylesheets/dist/bundled/type/classes.alaska.min.css";
+
+@use "@aurodesignsystem/webcorestylesheets/src/breakpoints";
+@use "@aurodesignsystem/webcorestylesheets/src/core";
+
+.headerLinkBox {
+  display: flex;
+  text-decoration: none;
+}
+
+.logoIcon {
+  width: calc(var(--ds-size-800, vac.$ds-size-800) * 2);
+  padding-right: var(--ds-size-100, vac.$ds-size-100);
+  border-right-width: 1px;
+  border-right-style: solid;
+  margin-right: var(--ds-size-100, vac.$ds-size-100);
+}
+
+.oneworldLogo {
+  display: flex;
+  width: calc(var(--ds-size-500, vac.$ds-size-500) + 0.1rem);
+  flex-direction: column;
+  justify-content: center;
+  padding-left: var(--ds-size-50, vac.$ds-size-50);
+  margin-bottom: var(--ds-size-100, vac.$ds-size-100);
+}
+
+.headerTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: var(--ds-size-50, vac.$ds-size-50);
+
+  &-tagline {
+    padding-bottom: var(--ds-size-50, vac.$ds-size-50);
+  }
+}

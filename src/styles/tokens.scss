@@ -1,0 +1,9 @@
+@use "@aurodesignsystem/design-tokens/dist/legacy/auro-classic/SCSSVariables" as vac;
+@use "@aurodesignsystem/design-tokens/dist/themes/alaska/SCSSVariables--alaska" as v;
+
+:host {
+  --ds-auro-lockup-alaska-logo-color: #02426D; // Hard-coded to prevent customization of Alaska Airlines logo color
+  --ds-auro-lockup-divider-color: var(--ds-basic-color-border-divider, #{v.$ds-basic-color-border-divider});
+  --ds-auro-lockup-subtitle-color: var(--ds-basic-color-texticon-muted, #{v.$ds-basic-color-texticon-muted});
+  --ds-auro-lockup-title-color: var(--ds-basic-color-texticon-accent1, #{v.$ds-basic-color-texticon-accent1});
+}
