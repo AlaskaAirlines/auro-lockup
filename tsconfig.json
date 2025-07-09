@@ -15,6 +15,10 @@
     // "Go to Definition" in VSCode
     "declarationMap": true,
     "target": "ES2022",
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    // Skip automatic type acquisition for packages without type definitions
+    "skipLibCheck": true,
+    // Disable automatic type library inclusion
+    "types": []
   }
 }

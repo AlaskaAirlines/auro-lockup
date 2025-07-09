@@ -1,9 +1,0 @@
-@import "./../node_modules/@aurodesignsystem/design-tokens/dist/auro-classic/SCSSVariables";
-@import "./../node_modules/@aurodesignsystem/design-tokens/dist/alaska/SCSSVariables--alaska";
-
-:host {
-  --ds-auro-lockup-alaska-logo-color: #02426D; // Hard-coded to prevent customization of Alaska Airlines logo color
-  --ds-auro-lockup-divider-color: var(--ds-basic-color-border-divider, #{$ds-basic-color-border-divider});
-  --ds-auro-lockup-subtitle-color: var(--ds-basic-color-texticon-muted, #{$ds-basic-color-texticon-muted});
-  --ds-auro-lockup-title-color: var(--ds-basic-color-texticon-accent1, #{$ds-basic-color-texticon-accent1});
-}

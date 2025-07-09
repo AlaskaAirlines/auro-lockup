@@ -14,9 +14,9 @@ import logoOfficial from '@alaskaairux/icons/dist/restricted/AS-tagline-200.mjs'
 import logoStandard from '@alaskaairux/icons/dist/restricted/AS-200.mjs';
 import logoOneworld from '@alaskaairux/icons/dist/logos/oneworld.mjs';
 
-import styleCss from "./style-css.js";
-import colorCss from "./color-css.js";
-import tokensCss from "./tokens-css.js";
+import styleCss from "./styles/style-css.js";
+import colorCss from "./styles/color-css.js";
+import tokensCss from "./styles/tokens-css.js";
 
 import AuroLibraryRuntimeUtils from '@aurodesignsystem/auro-library/scripts/utils/runtimeUtils.mjs';
 
@@ -140,10 +140,10 @@ export class AuroLockup extends LitElement {
           </div>
         ` : html`
           <div class="headerTitle">
-            <span class="headerTitle-title">
+            <span class="headerTitle-title heading-lg">
               <slot name="title"></slot>
             </span>
-            <span class="headerTitle-tagline">
+            <span class="headerTitle-tagline accent-xs">
               <slot name="subtitle"></slot>
             </span>
           </div>
