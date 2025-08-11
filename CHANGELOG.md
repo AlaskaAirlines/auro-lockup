@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [5.1.2](https://github.com/AlaskaAirlines/auro-lockup/compare/v5.1.1...v5.1.2) (2025-08-11)
+
+
+### Bug Fixes
+
+* auro library was causing aqua scan failures ([1ea6a20](https://github.com/AlaskaAirlines/auro-lockup/commit/1ea6a2043a3bdf55f9e00ecb377c81201bdc41e7))
+
 ## [5.1.1](https://github.com/AlaskaAirlines/auro-lockup/compare/v5.1.0...v5.1.1) (2025-07-09)
 
 
