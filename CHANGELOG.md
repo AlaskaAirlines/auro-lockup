@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [5.1.3](https://github.com/AlaskaAirlines/auro-lockup/compare/v5.1.2...v5.1.3) (2025-08-14)
+
+
+### Bug Fixes
+
+* update auro-library to latest version ([2e568fe](https://github.com/AlaskaAirlines/auro-lockup/commit/2e568fe07f218e38be1833b0eb4fcb6fe5f265e8))
+
 ## [5.1.2](https://github.com/AlaskaAirlines/auro-lockup/compare/v5.1.1...v5.1.2) (2025-08-11)
 
 
