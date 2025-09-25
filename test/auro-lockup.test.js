@@ -1,8 +1,8 @@
-import { fixture, html, expect } from '@open-wc/testing';
-import '../index.js';
+import { expect, fixture, html } from "@open-wc/testing";
+import "../index.js";
 
-describe('auro-lockup', () => {
-  it('auro-lockup is accessible', async () => {
+describe("auro-lockup", () => {
+  it("auro-lockup is accessible", async () => {
     const el = await fixture(html`
       <auro-lockup>
         <span slot="title">Product Name</span>
@@ -13,7 +13,7 @@ describe('auro-lockup', () => {
     await expect(el).to.be.accessible();
   });
 
-  it('auro-lockup custom element is defined', async () => {
+  it("auro-lockup custom element is defined", async () => {
     const el = await !!customElements.get("auro-lockup");
 
     await expect(el).to.be.true;
@@ -24,20 +24,20 @@ describe('auro-lockup', () => {
       <auro-lockup variant="oneworld"></auro-lockup>
     `);
 
-    const logo = el.shadowRoot.querySelector('.oneworldLogo');
-    const headerTitle = el.shadowRoot.querySelector('.headerTitle')
+    const logo = el.shadowRoot.querySelector(".oneworldLogo");
+    const headerTitle = el.shadowRoot.querySelector(".headerTitle");
 
     await expect(logo).to.be.visible;
     await expect(headerTitle).to.not.exist;
   });
 
-  it('auro-lockup oneworld logo with standard Alaska logo sans tagline', async () => {
+  it("auro-lockup oneworld logo with standard Alaska logo sans tagline", async () => {
     const el = await fixture(html`
       <auro-lockup variant="oneworld" standard></auro-lockup>
     `);
 
-    const logo = el.shadowRoot.querySelector('.oneworldLogo');
-    const headerTitle = el.shadowRoot.querySelector('.headerTitle')
+    const logo = el.shadowRoot.querySelector(".oneworldLogo");
+    const headerTitle = el.shadowRoot.querySelector(".headerTitle");
 
     await expect(logo).to.be.visible;
     await expect(headerTitle).to.not.exist;
