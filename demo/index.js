@@ -1,4 +1,4 @@
-import { AuroLockup } from "../src/auro-lockup.js";
+import { AuroLockup } from "../src/index";
 
 AuroLockup.register();
 AuroLockup.register("custom-lockup");

@@ -98,7 +98,7 @@ There are two important parts of every Auro component. The <a href="https://deve
 To protect from versioning conflicts with other instances of the component being loaded, it is recommended to use our `AuroLockup.register(name)` method and pass in a unique name.
 
 ```js
-import { AuroLockup } from './src/auro-lockup.js';
+import { AuroLockup } from '@aurodesignsystem/auro-lockup/class';
 
 AuroLockup.register('custom-lockup');
 ```

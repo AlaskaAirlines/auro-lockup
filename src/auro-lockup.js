@@ -13,9 +13,9 @@ import AuroLibraryRuntimeUtils from "@aurodesignsystem/auro-library/scripts/util
 import { html, LitElement } from "lit";
 import { classMap } from "lit/directives/class-map.js";
 import { ifDefined } from "lit/directives/if-defined.js";
-import colorCss from "./styles/color-css.js";
-import styleCss from "./styles/style-css.js";
-import tokensCss from "./styles/tokens-css.js";
+import colorCss from "./styles/color.scss";
+import styleCss from "./styles/style.scss";
+import tokensCss from "./styles/tokens.scss";
 
 export class AuroLockup extends LitElement {
   constructor() {
