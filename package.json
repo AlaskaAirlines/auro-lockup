@@ -25,11 +25,11 @@
   },
   "devDependencies": {
     "@alaskaairux/icons": "^5.5.0",
-    "@aurodesignsystem/auro-cli": "^3.0.2",
+    "@aurodesignsystem/auro-cli": "^3.0.3",
     "@aurodesignsystem/auro-config": "^1.3.0",
-    "@aurodesignsystem/auro-library": "^5.4.0",
-    "@aurodesignsystem/design-tokens": "^8.4.0",
-    "@aurodesignsystem/webcorestylesheets": "10.0.3",
+    "@aurodesignsystem/auro-library": "^5.5.3",
+    "@aurodesignsystem/design-tokens": "^8.4.4",
+    "@aurodesignsystem/webcorestylesheets": "10.0.4",
     "husky": "^9.1.7"
   },
   "browserslist": [
