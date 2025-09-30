@@ -5,26 +5,23 @@
 
 /* eslint-disable indent, jsdoc/no-undefined-types */
 
+import logoOneworld from "@alaskaairux/icons/dist/logos/oneworld.mjs";
+import logoStandard from "@alaskaairux/icons/dist/restricted/AS-200.mjs";
+import logoOfficial from "@alaskaairux/icons/dist/restricted/AS-tagline-200.mjs";
+import AuroLibraryRuntimeUtils from "@aurodesignsystem/auro-library/scripts/utils/runtimeUtils.mjs";
 // If use litElement base class
-import { LitElement, html } from "lit";
-import { ifDefined } from 'lit/directives/if-defined.js';
-import { classMap } from 'lit/directives/class-map.js';
-
-import logoOfficial from '@alaskaairux/icons/dist/restricted/AS-tagline-200.mjs';
-import logoStandard from '@alaskaairux/icons/dist/restricted/AS-200.mjs';
-import logoOneworld from '@alaskaairux/icons/dist/logos/oneworld.mjs';
-
-import styleCss from "./styles/style-css.js";
-import colorCss from "./styles/color-css.js";
-import tokensCss from "./styles/tokens-css.js";
-
-import AuroLibraryRuntimeUtils from '@aurodesignsystem/auro-library/scripts/utils/runtimeUtils.mjs';
+import { html, LitElement } from "lit";
+import { classMap } from "lit/directives/class-map.js";
+import { ifDefined } from "lit/directives/if-defined.js";
+import colorCss from "./styles/color.scss";
+import styleCss from "./styles/style.scss";
+import tokensCss from "./styles/tokens.scss";
 
 export class AuroLockup extends LitElement {
   constructor() {
     super();
 
-    this.path = '/';
+    this.path = "/";
     this.standard = false;
     this.oneworld = false;
 
@@ -44,14 +41,14 @@ export class AuroLockup extends LitElement {
        */
       oneworld: {
         type: Boolean,
-        reflect: true
+        reflect: true,
       },
 
       /**
        * URL path for lockup link.
        */
       path: {
-        type: String
+        type: String,
       },
 
       /**
@@ -59,7 +56,7 @@ export class AuroLockup extends LitElement {
        */
       standard: {
         type: Boolean,
-        reflect: true
+        reflect: true,
       },
 
       /**
@@ -67,17 +64,13 @@ export class AuroLockup extends LitElement {
        */
       variant: {
         type: String,
-        reflect: true
-      }
+        reflect: true,
+      },
     };
   }
 
   static get styles() {
-    return [
-      styleCss,
-      colorCss,
-      tokensCss
-    ];
+    return [styleCss, colorCss, tokensCss];
   }
 
   /**
@@ -94,13 +87,13 @@ export class AuroLockup extends LitElement {
 
   firstUpdated() {
     // Add the tag name as an attribute if it is different than the component name
-    this.runtimeUtils.handleComponentTagRename(this, 'auro-lockup');
+    this.runtimeUtils.handleComponentTagRename(this, "auro-lockup");
   }
 
   updated() {
     // Support deprecated oneworld attribute
     if (this.oneworld) {
-      this.setAttribute('variant', 'oneworld');
+      this.setAttribute("variant", "oneworld");
     }
   }
 
@@ -110,8 +103,8 @@ export class AuroLockup extends LitElement {
    * @returns {TemplateResult} - The html template for the icon.
    */
   generateIconHtml(svgContent) {
-    const dom = new DOMParser().parseFromString(svgContent, 'text/html'),
-      svg = dom.body.firstChild;
+    const dom = new DOMParser().parseFromString(svgContent, "text/html");
+    const svg = dom.body.firstChild;
 
     return html`${svg}`;
   }
@@ -122,23 +115,27 @@ export class AuroLockup extends LitElement {
   // function that renders the HTML and CSS into  the scope of the component
   render() {
     const classes = {
-      'logoIcon': true,
-      'logoDivider': !this.variant
+      logoIcon: true,
+      logoDivider: !this.variant,
     };
 
     return html`
       <a href=${this.path} class="headerLinkBox">
         <div class="${classMap(classes)}">
-          ${ifDefined(this.standard && this.variant === 'oneworld'
-            ? this.generateIconHtml(logoStandard.svg)
-            : this.generateIconHtml(logoOfficial.svg))
-          }
+          ${ifDefined(
+            this.standard && this.variant === "oneworld"
+              ? this.generateIconHtml(logoStandard.svg)
+              : this.generateIconHtml(logoOfficial.svg),
+          )}
         </div>
-        ${ifDefined(this.variant === 'oneworld' ? html`
+        ${ifDefined(
+          this.variant === "oneworld"
+            ? html`
           <div class="oneworldLogo">
             ${this.generateIconHtml(logoOneworld.svg)}
           </div>
-        ` : html`
+        `
+            : html`
           <div class="headerTitle">
             <span class="headerTitle-title heading-lg">
               <slot name="title"></slot>
@@ -147,7 +144,8 @@ export class AuroLockup extends LitElement {
               <slot name="subtitle"></slot>
             </span>
           </div>
-        `)}
+        `,
+        )}
       </a>
     `;
   }
