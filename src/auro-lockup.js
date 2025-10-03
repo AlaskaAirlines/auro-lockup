@@ -17,6 +17,13 @@ import colorCss from "./styles/color.scss";
 import styleCss from "./styles/style.scss";
 import tokensCss from "./styles/tokens.scss";
 
+/**
+ * The auro-lockup element is a standardized custom element for the use in headers of Alaska Airlines extended experiences.
+ *
+ * @slot title - Set title for lockup
+ * @slot subtitle - Set sub-title for lockup
+ * @attr {Boolean} onDark - DEPRECATED - Use `appearance="inverse"` instead.
+ */
 export class AuroLockup extends LitElement {
   constructor() {
     super();
@@ -35,6 +42,16 @@ export class AuroLockup extends LitElement {
   static get properties() {
     return {
       // ...super.properties,
+
+      /**
+       * Defines whether the component will be on lighter or darker backgrounds.
+       * @property {'default', 'inverse'}
+       * @default 'default'
+       */
+      appearance: {
+        type: String,
+        reflect: true
+      },
 
       /**
        * (DEPRECATED) Replaces product name and tag line with Oneworld logo.
