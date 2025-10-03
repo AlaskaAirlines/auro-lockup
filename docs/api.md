@@ -4,18 +4,19 @@ The auro-lockup element is a standardized custom element for the use in headers 
 
 ## Attributes
 
-| Attribute | Type      | Description       |
-|-----------|-----------|-------------------|
-| `onDark`  | `Boolean` | Toggle onDark UI. |
+| Attribute | Type      | Description                                      |
+|-----------|-----------|--------------------------------------------------|
+| `onDark`  | `Boolean` | DEPRECATED - Use `appearance="inverse"` instead. |
 
 ## Properties
 
-| Property   | Attribute  | Type      | Default | Description                                      |
-|------------|------------|-----------|---------|--------------------------------------------------|
-| `oneworld` | `oneworld` | `boolean` | false   | (DEPRECATED) Replaces product name and tag line with Oneworld logo. |
-| `path`     | `path`     | `string`  | "/"     | URL path for lockup link.                        |
-| `standard` | `standard` | `boolean` | false   | Uses the standard Alaska logo in place of the official logo, requires use of `oneWorld` attribute. |
-| `variant`  | `variant`  | `string`  |         | Sets lockup variant option. Only possible value is `oneworld`. |
+| Property     | Attribute    | Type      | Default     | Description                                      |
+|--------------|--------------|-----------|-------------|--------------------------------------------------|
+| `appearance` | `appearance` | `string`  | "'default'" | Defines whether the component will be on lighter or darker backgrounds. |
+| `oneworld`   | `oneworld`   | `boolean` | false       | (DEPRECATED) Replaces product name and tag line with Oneworld logo. |
+| `path`       | `path`       | `string`  | "/"         | URL path for lockup link.                        |
+| `standard`   | `standard`   | `boolean` | false       | Uses the standard Alaska logo in place of the official logo, requires use of `oneWorld` attribute. |
+| `variant`    | `variant`    | `string`  |             | Sets lockup variant option. Only possible value is `oneworld`. |
 
 ## Slots
 

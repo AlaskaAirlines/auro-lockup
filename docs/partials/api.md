@@ -7,18 +7,18 @@ See the following examples for use-case illustrations of API options.
 
 ### Attribute Examples
 
-#### `onDark`
+#### Visual state on dark background
 
-Use the `onDark` attribute for the proper presentation on a darker background.
+Use the `appearance="inverse"` attribute for the proper presentation on a darker background.
 
 <div class="exampleWrapper--ondark">
-  <!-- AURO-GENERATED-CONTENT:START (FILE:src=../apiExamples/onDarkExample.html) -->
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=../apiExamples/inverseAppearanceExample.html) -->
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 <auro-accordion alignRight>
   <span slot="trigger">See code</span>
 
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=../apiExamples/onDarkExample.html) -->
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=../apiExamples/inverseAppearanceExample.html) -->
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
