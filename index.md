@@ -70,14 +70,14 @@ The `standard` property is only supported with the `oneworld` option.
 <!-- AURO-GENERATED-CONTENT:END -->
 </auro-accordion>
 
-## auro-lockup onDark
+## auro-lockup appearance options
 
-For lockup use with dark backgrounds or a dark mode, use the `onDark` attribute.
+For lockup use with dark backgrounds or a dark mode, use the `appearance="inverse"` attribute.
 
 <div class="exampleWrapper--ondark">
-  <!-- AURO-GENERATED-CONTENT:START (FILE:src=../apiExamples/onDark.html) -->
-  <!-- The below content is automatically added from ../apiExamples/onDark.html -->
-  <auro-lockup onDark>
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=../apiExamples/inverseAppearance.html) -->
+  <!-- The below content is automatically added from ../apiExamples/inverseAppearance.html -->
+  <auro-lockup appearance="inverse">
     <span slot="title">Product Name</span>
     <span slot="subtitle">Powered by Partner Name</span>
   </auro-lockup>
@@ -85,11 +85,11 @@ For lockup use with dark backgrounds or a dark mode, use the `onDark` attribute.
 </div>
 <auro-accordion alignRight>
   <span slot="trigger">See code</span>
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=../apiExamples/onDark.html) -->
-<!-- The below code snippet is automatically added from ../apiExamples/onDark.html -->
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=../apiExamples/inverseAppearance.html) -->
+<!-- The below code snippet is automatically added from ../apiExamples/inverseAppearance.html -->
 
 ```html
-<auro-lockup onDark>
+<auro-lockup appearance="inverse">
   <span slot="title">Product Name</span>
   <span slot="subtitle">Powered by Partner Name</span>
 </auro-lockup>
@@ -97,34 +97,34 @@ For lockup use with dark backgrounds or a dark mode, use the `onDark` attribute.
 <!-- AURO-GENERATED-CONTENT:END -->
 </auro-accordion>
 <div class="exampleWrapper--ondark">
-  <!-- AURO-GENERATED-CONTENT:START (FILE:src=../apiExamples/onDark-2.html) -->
-  <!-- The below content is automatically added from ../apiExamples/onDark-2.html -->
-  <auro-lockup onDark variant="oneworld"></auro-lockup>
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=../apiExamples/inverseAppearance-2.html) -->
+  <!-- The below content is automatically added from ../apiExamples/inverseAppearance-2.html -->
+  <auro-lockup appearance="inverse" variant="oneworld"></auro-lockup>
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 <auro-accordion alignRight>
   <span slot="trigger">See code</span>
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=../apiExamples/onDark-2.html) -->
-<!-- The below code snippet is automatically added from ../apiExamples/onDark-2.html -->
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=../apiExamples/inverseAppearance-2.html) -->
+<!-- The below code snippet is automatically added from ../apiExamples/inverseAppearance-2.html -->
 
 ```html
-<auro-lockup onDark variant="oneworld"></auro-lockup>
+<auro-lockup appearance="inverse" variant="oneworld"></auro-lockup>
 ```
 <!-- AURO-GENERATED-CONTENT:END -->
 </auro-accordion>
 <div class="exampleWrapper--ondark">
-  <!-- AURO-GENERATED-CONTENT:START (FILE:src=../apiExamples/onDark-3.html) -->
-  <!-- The below content is automatically added from ../apiExamples/onDark-3.html -->
-  <auro-lockup onDark standard variant="oneworld"></auro-lockup>
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=../apiExamples/inverseAppearance-3.html) -->
+  <!-- The below content is automatically added from ../apiExamples/inverseAppearance-3.html -->
+  <auro-lockup appearance="inverse" standard variant="oneworld"></auro-lockup>
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 <auro-accordion alignRight>
   <span slot="trigger">See code</span>
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=../apiExamples/onDark-3.html) -->
-<!-- The below code snippet is automatically added from ../apiExamples/onDark-3.html -->
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=../apiExamples/inverseAppearance-3.html) -->
+<!-- The below code snippet is automatically added from ../apiExamples/inverseAppearance-3.html -->
 
 ```html
-<auro-lockup onDark standard variant="oneworld"></auro-lockup>
+<auro-lockup appearance="inverse" standard variant="oneworld"></auro-lockup>
 ```
 <!-- AURO-GENERATED-CONTENT:END -->
 </auro-accordion>

@@ -7,18 +7,19 @@ The auro-lockup element is a standardized custom element for the use in headers 
 
 ## Attributes
 
-| Attribute | Type      | Description       |
-|-----------|-----------|-------------------|
-| [onDark](#onDark)  | `Boolean` | Toggle onDark UI. |
+| Attribute | Type      | Description                                      |
+|-----------|-----------|--------------------------------------------------|
+| [onDark](#onDark)  | `Boolean` | DEPRECATED - Use `appearance="inverse"` instead. |
 
 ## Properties
 
-| Property   | Attribute  | Type      | Default | Description                                      |
-|------------|------------|-----------|---------|--------------------------------------------------|
-| [oneworld](#oneworld) | `oneworld` | `boolean` | false   | (DEPRECATED) Replaces product name and tag line with Oneworld logo. |
-| [path](#path)     | `path`     | `string`  | "/"     | URL path for lockup link.                        |
-| [standard](#standard) | `standard` | `boolean` | false   | Uses the standard Alaska logo in place of the official logo, requires use of `oneWorld` attribute. |
-| [variant](#variant)  | `variant`  | `string`  |         | Sets lockup variant option. Only possible value is `oneworld`. |
+| Property     | Attribute    | Type      | Default     | Description                                      |
+|--------------|--------------|-----------|-------------|--------------------------------------------------|
+| [appearance](#appearance) | `appearance` | `string`  | "'default'" | Defines whether the component will be on lighter or darker backgrounds. |
+| [oneworld](#oneworld)   | `oneworld`   | `boolean` | false       | (DEPRECATED) Replaces product name and tag line with Oneworld logo. |
+| [path](#path)       | `path`       | `string`  | "/"         | URL path for lockup link.                        |
+| [standard](#standard)   | `standard`   | `boolean` | false       | Uses the standard Alaska logo in place of the official logo, requires use of `oneWorld` attribute. |
+| [variant](#variant)    | `variant`    | `string`  |             | Sets lockup variant option. Only possible value is `oneworld`. |
 
 ## Slots
 
@@ -34,22 +35,23 @@ See the following examples for use-case illustrations of API options.
 
 ### Attribute Examples
 
-#### <a name="onDark"></a>`onDark`<a href="#" style="float: right; font-size: 1rem; font-weight: 100;">back to top</a>
-Use the `onDark` attribute for the proper presentation on a darker background.
+#### Visual state on dark background
+
+Use the `appearance="inverse"` attribute for the proper presentation on a darker background.
 
 <div class="exampleWrapper--ondark">
-  <!-- AURO-GENERATED-CONTENT:START (FILE:src=../apiExamples/onDarkExample.html) -->
-  <!-- The below content is automatically added from ../apiExamples/onDarkExample.html -->
-  <auro-lockup onDark></auro-lockup>
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=../apiExamples/inverseAppearanceExample.html) -->
+  <!-- The below content is automatically added from ../apiExamples/inverseAppearanceExample.html -->
+  <auro-lockup appearance="inverse"></auro-lockup>
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 <auro-accordion alignRight>
   <span slot="trigger">See code</span>
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=../apiExamples/onDarkExample.html) -->
-<!-- The below code snippet is automatically added from ../apiExamples/onDarkExample.html -->
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=../apiExamples/inverseAppearanceExample.html) -->
+<!-- The below code snippet is automatically added from ../apiExamples/inverseAppearanceExample.html -->
 
 ```html
-<auro-lockup onDark></auro-lockup>
+<auro-lockup appearance="inverse"></auro-lockup>
 ```
 <!-- AURO-GENERATED-CONTENT:END -->
 </auro-accordion>
