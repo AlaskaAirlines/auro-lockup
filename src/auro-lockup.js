@@ -18,7 +18,8 @@ import styleCss from "./styles/style.scss";
 import tokensCss from "./styles/tokens.scss";
 
 /**
- * The auro-lockup element is a standardized custom element for the use in headers of Alaska Airlines extended experiences.
+ * The `auro-lockup` element is a standardized custom element for the use in headers of Alaska Airlines extended experiences.
+ * @customElement auro-lockup
  *
  * @slot title - Set title for lockup
  * @slot subtitle - Set sub-title for lockup
@@ -28,6 +29,10 @@ export class AuroLockup extends LitElement {
   constructor() {
     super();
 
+    this._initializeDefaults();
+  }
+
+  _initializeDefaults() {
     this.path = "/";
     this.standard = false;
     this.oneworld = false;
@@ -54,7 +59,15 @@ export class AuroLockup extends LitElement {
       },
 
       /**
-       * (DEPRECATED) Replaces product name and tag line with Oneworld logo.
+       * DEPRECATED - Use `appearance="inverse"` instead.
+       */
+      onDark: {
+        type: Boolean,
+        reflect: true
+      },
+
+      /**
+       * DEPRECATED - Use `variant="oneworld"` instead.
        */
       oneworld: {
         type: Boolean,
@@ -92,7 +105,7 @@ export class AuroLockup extends LitElement {
 
   /**
    * This will register this element with the browser.
-   * @param {string} [name="auro-lockup"] - The name of element that you want to register to.
+   * @param {string} [name="auro-lockup"] - The name of the element that you want to register.
    *
    * @example
    * AuroLockup.register("custom-lockup") // this will register this element to <custom-lockup/>
