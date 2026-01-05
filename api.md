@@ -1,65 +1,124 @@
-<!-- AURO-GENERATED-CONTENT:START (FILE:src=../docs/api.md) -->
-<!-- The below content is automatically added from ../docs/api.md -->
+<!-- AURO-GENERATED-CONTENT:START (FILE:src=./../docs/api.md) -->
+<!-- The below content is automatically added from ./../docs/api.md -->
 
 # auro-lockup
 
-The auro-lockup element is a standardized custom element for the use in headers of Alaska Airlines extended experiences.
+The `auro-lockup` element is a standardized custom element for the use in headers of Alaska Airlines extended experiences.
 
-## Attributes
+### Properties & Attributes
 
-| Attribute | Type      | Description                                      |
-|-----------|-----------|--------------------------------------------------|
-| [onDark](#onDark)  | `Boolean` | DEPRECATED - Use `appearance="inverse"` instead. |
+| Properties | Attributes | Modifiers | Type    | Default   | Description                                                                                        |
+| ---------- | ---------- | --------- | ------- | --------- | -------------------------------------------------------------------------------------------------- |
+| appearance | appearance |           | string  | `default` | Defines whether the component will be on lighter or darker backgrounds.                            |
+| onDark     | onDark     |           | boolean |           | DEPRECATED - Use `appearance="inverse"` instead.                                                   |
+| oneworld   | oneworld   |           | boolean |           | DEPRECATED - Use `variant="oneworld"` instead.                                                     |
+| path       | path       |           | string  |           | URL path for lockup link.                                                                          |
+| standard   | standard   |           | boolean |           | Uses the standard Alaska logo in place of the official logo, requires use of `oneWorld` attribute. |
+| variant    | variant    |           | string  |           | Sets lockup variant option. Only possible value is `oneworld`.                                     |
 
-## Properties
+### Methods
 
-| Property     | Attribute    | Type      | Default     | Description                                      |
-|--------------|--------------|-----------|-------------|--------------------------------------------------|
-| [appearance](#appearance) | `appearance` | `string`  | "'default'" | Defines whether the component will be on lighter or darker backgrounds. |
-| [oneworld](#oneworld)   | `oneworld`   | `boolean` | false       | (DEPRECATED) Replaces product name and tag line with Oneworld logo. |
-| [path](#path)       | `path`       | `string`  | "/"         | URL path for lockup link.                        |
-| [standard](#standard)   | `standard`   | `boolean` | false       | Uses the standard Alaska logo in place of the official logo, requires use of `oneWorld` attribute. |
-| [variant](#variant)    | `variant`    | `string`  |             | Sets lockup variant option. Only possible value is `oneworld`. |
+| Name     | Parameters                                                           | Return | Description                                       |
+| -------- | -------------------------------------------------------------------- | ------ | ------------------------------------------------- |
+| register | `name` (string) - The name of the element that you want to register. |        | This will register this element with the browser. |
 
-## Slots
+### Slots
 
-| Name       | Description              |
-|------------|--------------------------|
-| [subtitle](#subtitle) | Set sub-title for lockup |
-| [title](#title)    | Set title for lockup     |
+| Name     | Description              |
+| -------- | ------------------------ |
+| subtitle | Set sub-title for lockup |
+| title    | Set title for lockup     |
 <!-- AURO-GENERATED-CONTENT:END -->
 
-## API Examples
+## Basic
 
-See the following examples for use-case illustrations of API options.
-
-### Attribute Examples
-
-#### Visual state on dark background
-
-Use the `appearance="inverse"` attribute for the proper presentation on a darker background.
-
-<div class="exampleWrapper--ondark">
-  <!-- AURO-GENERATED-CONTENT:START (FILE:src=../apiExamples/inverseAppearanceExample.html) -->
-  <!-- The below content is automatically added from ../apiExamples/inverseAppearanceExample.html -->
-  <auro-lockup appearance="inverse"></auro-lockup>
+<div class="exampleWrapper">
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/basic.html) -->
+  <!-- The below content is automatically added from ./../apiExamples/basic.html -->
+  <auro-lockup>
+    <span slot="title">Place title text here</span>
+    <span slot="subtitle">Place subtitle text here</span>
+  </auro-lockup>
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 <auro-accordion alignRight>
   <span slot="trigger">See code</span>
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=../apiExamples/inverseAppearanceExample.html) -->
-<!-- The below code snippet is automatically added from ../apiExamples/inverseAppearanceExample.html -->
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../apiExamples/basic.html) -->
+<!-- The below code snippet is automatically added from ./../apiExamples/basic.html -->
 
 ```html
-<auro-lockup appearance="inverse"></auro-lockup>
+<auro-lockup>
+  <span slot="title">Place title text here</span>
+  <span slot="subtitle">Place subtitle text here</span>
+</auro-lockup>
 ```
 <!-- AURO-GENERATED-CONTENT:END -->
 </auro-accordion>
 
-### Property Examples
+## Property & Attribute Examples
 
-#### <a name="oneWorld"></a>`oneWorld`<a href="#" style="float: right; font-size: 1rem; font-weight: 100;">back to top</a>
-Use the `oneWorld` property to replace the product name and tag line with one**World** logo.
+### Appearance on Dark Backgrounds
+
+Use `appearance="inverse"` for the proper presentation on a darker background.
+
+<div class="exampleWrapper--ondark">
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=../apiExamples/inverse-appearance.html) -->
+  <!-- The below content is automatically added from ../apiExamples/inverse-appearance.html -->
+  <auro-lockup appearance="inverse">
+    <span slot="title">Product Name</span>
+    <span slot="subtitle">Powered by Partner Name</span>
+  </auro-lockup>
+  <!-- AURO-GENERATED-CONTENT:END -->
+</div>
+<auro-accordion alignRight>
+  <span slot="trigger">See code</span>
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=../apiExamples/inverse-appearance.html) -->
+<!-- The below code snippet is automatically added from ../apiExamples/inverse-appearance.html -->
+
+```html
+<auro-lockup appearance="inverse">
+  <span slot="title">Product Name</span>
+  <span slot="subtitle">Powered by Partner Name</span>
+</auro-lockup>
+```
+<!-- AURO-GENERATED-CONTENT:END -->
+</auro-accordion>
+<div class="exampleWrapper--ondark">
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=../apiExamples/inverse-appearance-2.html) -->
+  <!-- The below content is automatically added from ../apiExamples/inverse-appearance-2.html -->
+  <auro-lockup appearance="inverse" variant="oneworld"></auro-lockup>
+  <!-- AURO-GENERATED-CONTENT:END -->
+</div>
+<auro-accordion alignRight>
+  <span slot="trigger">See code</span>
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=../apiExamples/inverse-appearance-2.html) -->
+<!-- The below code snippet is automatically added from ../apiExamples/inverse-appearance-2.html -->
+
+```html
+<auro-lockup appearance="inverse" variant="oneworld"></auro-lockup>
+```
+<!-- AURO-GENERATED-CONTENT:END -->
+</auro-accordion>
+<div class="exampleWrapper--ondark">
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=../apiExamples/inverse-appearance-3.html) -->
+  <!-- The below content is automatically added from ../apiExamples/inverse-appearance-3.html -->
+  <auro-lockup appearance="inverse" standard variant="oneworld"></auro-lockup>
+  <!-- AURO-GENERATED-CONTENT:END -->
+</div>
+<auro-accordion alignRight>
+  <span slot="trigger">See code</span>
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=../apiExamples/inverse-appearance-3.html) -->
+<!-- The below code snippet is automatically added from ../apiExamples/inverse-appearance-3.html -->
+
+```html
+<auro-lockup appearance="inverse" standard variant="oneworld"></auro-lockup>
+```
+<!-- AURO-GENERATED-CONTENT:END -->
+</auro-accordion>
+
+### OneWorld Variant
+
+Use `variant="oneworld"` to replace the product name and tag line with one**World** logo.
 
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=../apiExamples/oneworld.html) -->
@@ -78,8 +137,9 @@ Use the `oneWorld` property to replace the product name and tag line with one**W
 <!-- AURO-GENERATED-CONTENT:END -->
 </auro-accordion>
 
-#### <a name="path"></a>`path`<a href="#" style="float: right; font-size: 1rem; font-weight: 100;">back to top</a>
-Use the `path` property to add a custom URL reference to the clickable lockup. A `/` is set by default.
+### Path
+
+Use the `path` attribute to add a custom URL reference to the clickable lockup. The default is `/`.
 
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=../apiExamples/path.html) -->
@@ -98,8 +158,9 @@ Use the `path` property to add a custom URL reference to the clickable lockup. A
 <!-- AURO-GENERATED-CONTENT:END -->
 </auro-accordion>
 
-#### <a name="standard"></a>`standard`<a href="#" style="float: right; font-size: 1rem; font-weight: 100;">back to top</a>
-Use the `standard` property to use the standard Alaska logo in place of the official logo. Restricted to use with the one**World** logo.
+### Standard
+
+Use the `standard` attribute to use the standard Alaska logo in place of the official logo. Restricted to use with the one**World** logo.
 
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=../apiExamples/standard.html) -->
@@ -118,9 +179,10 @@ Use the `standard` property to use the standard Alaska logo in place of the offi
 <!-- AURO-GENERATED-CONTENT:END -->
 </auro-accordion>
 
-### Slot Examples
+## Slot Examples
 
-#### <a name="title"></a>`title`<a href="#" style="float: right; font-size: 1rem; font-weight: 100;">back to top</a>
+### Title
+
 Use the `title` slot to add lockup content.
 
 <div class="exampleWrapper">
@@ -144,7 +206,8 @@ Use the `title` slot to add lockup content.
 <!-- AURO-GENERATED-CONTENT:END -->
 </auro-accordion>
 
-#### <a name="subtitle"></a>`subtitle`<a href="#" style="float: right; font-size: 1rem; font-weight: 100;">back to top</a>
+### Subtitle
+
 Use the `subtitle` slot to add lockup content.
 
 <div class="exampleWrapper">
@@ -168,12 +231,12 @@ Use the `subtitle` slot to add lockup content.
 <!-- AURO-GENERATED-CONTENT:END -->
 </auro-accordion>
 
-### Theme Support
+## Restyle Component with CSS Variables
 
-The component may be restyled using the following code sample and changing the values of the following token(s).
+The component may be restyled by changing the values of the following token(s).
 
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=../src/styles/tokens.scss) -->
-<!-- The below code snippet is automatically added from ../src/styles/tokens.scss -->
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../src/styles/tokens.scss) -->
+<!-- The below code snippet is automatically added from ./../src/styles/tokens.scss -->
 
 ```scss
 @use "@aurodesignsystem/design-tokens/dist/legacy/auro-classic/SCSSVariables" as vac;
