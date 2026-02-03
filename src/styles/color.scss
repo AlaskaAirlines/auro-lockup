@@ -32,3 +32,6 @@
   --ds-auro-lockup-title-color: var(--ds-basic-color-texticon-inverse, #{v.$ds-basic-color-texticon-inverse});
 }
 
+:host([variant="oneworld"]) {
+  --ds-auro-lockup-divider-color: transparent;
+}
