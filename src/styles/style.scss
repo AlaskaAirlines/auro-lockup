@@ -19,7 +19,10 @@
 
 .logoIcon {
   width: calc(var(--ds-size-800, vac.$ds-size-800) * 2);
-  margin-right: calc(var(--ds-size-500, vac.$ds-size-500) + var(--ds-size-50, vac.$ds-size-50));
+  padding-right: var(--ds-size-100, vac.$ds-size-100);
+  border-right-width: 1px;
+  border-right-style: solid;
+  margin-right: var(--ds-size-100, vac.$ds-size-100);
 }
 
 .oneworldLogo {
@@ -27,6 +30,7 @@
   width: calc(var(--ds-size-500, vac.$ds-size-500) + 0.1rem);
   flex-direction: column;
   justify-content: center;
+  padding-left: var(--ds-size-50, vac.$ds-size-50);
   margin-bottom: var(--ds-size-100, vac.$ds-size-100);
 }
 
@@ -34,6 +38,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-left: var(--ds-size-50, vac.$ds-size-50);
 
   &-tagline {
     padding-bottom: var(--ds-size-50, vac.$ds-size-50);

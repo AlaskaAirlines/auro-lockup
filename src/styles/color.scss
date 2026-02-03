@@ -10,6 +10,10 @@
   color: var(--ds-auro-lockup-alaska-logo-color);
 }
 
+.logoIcon {
+  border-right-color: var(--ds-auro-lockup-divider-color);
+}
+
 .headerTitle {
   &-title {
     color: var(--ds-auro-lockup-title-color);
@@ -23,6 +27,7 @@
 :host([onDark]),
 :host([appearance="inverse"]) {
   --ds-auro-lockup-alaska-logo-color: #FFF; // Hard-coded to prevent customization of Alaska Airlines logo color
+  --ds-auro-lockup-divider-color: var(--ds-basic-color-border-divider-inverse, #{v.$ds-basic-color-border-divider-inverse});
   --ds-auro-lockup-subtitle-color: var(--ds-basic-color-texticon-inverse, #{v.$ds-basic-color-texticon-inverse});
   --ds-auro-lockup-title-color: var(--ds-basic-color-texticon-inverse, #{v.$ds-basic-color-texticon-inverse});
 }
