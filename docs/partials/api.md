@@ -16,9 +16,9 @@
 
 </auro-accordion>
 
-## Property & Attribute Examples
+## Property and attribute examples
 
-### Appearance on Dark Backgrounds
+### Appearance on dark backgrounds
 
 Use `appearance="inverse"` for the proper presentation on a darker background.
 
@@ -61,7 +61,7 @@ Use `appearance="inverse"` for the proper presentation on a darker background.
 
 </auro-accordion>
 
-### OneWorld Variant
+### Oneworld variant
 
 Use `variant="oneworld"` to replace the product name and tag line with one**World** logo.
 
@@ -79,7 +79,7 @@ Use `variant="oneworld"` to replace the product name and tag line with one**Worl
 
 ### Path
 
-Use the `path` attribute to add a custom URL reference to the clickable lockup. The default is `/`.
+Use the `path` attribute to set the page the lockup links to. The default is `/`.
 
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=../apiExamples/path.html) -->
@@ -95,7 +95,7 @@ Use the `path` attribute to add a custom URL reference to the clickable lockup. 
 
 ### Standard
 
-Use the `standard` attribute to use the standard Alaska logo in place of the official logo. Restricted to use with the one**World** logo.
+When `variant="oneworld"` is set, use the `standard` attribute to show the Alaska Airlines logo without its tagline. Without `variant="oneworld"`, it has no effect.
 
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=../apiExamples/standard.html) -->
@@ -109,11 +109,11 @@ Use the `standard` attribute to use the standard Alaska logo in place of the off
 
 </auro-accordion>
 
-## Slot Examples
+## Slot examples
 
 ### Title
 
-Use the `title` slot to add lockup content.
+Use the `title` slot for the product or site name, shown next to the logo.
 
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=../apiExamples/title.html) -->
@@ -129,7 +129,7 @@ Use the `title` slot to add lockup content.
 
 ### Subtitle
 
-Use the `subtitle` slot to add lockup content.
+Use the `subtitle` slot for a short line under the title, such as the name of a partner.
 
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=../apiExamples/subtitle.html) -->
@@ -143,9 +143,9 @@ Use the `subtitle` slot to add lockup content.
 
 </auro-accordion>
 
-## Restyle Component with CSS Variables
+## Restyle with CSS custom properties
 
-The component may be restyled by changing the values of the following token(s).
+Restyle the component by changing the values of the following CSS custom properties. Don't change `--ds-auro-lockup-alaska-logo-color`, because the Alaska Airlines logo must keep its brand color.
 
 <!-- AURO-GENERATED-CONTENT:START (CODE:src=./../src/styles/tokens.scss) -->
 <!-- AURO-GENERATED-CONTENT:END -->
