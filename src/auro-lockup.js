@@ -18,12 +18,26 @@ import styleCss from "./styles/style.scss";
 import tokensCss from "./styles/tokens.scss";
 
 /**
- * The `auro-lockup` element is a standardized custom element for the use in headers of Alaska Airlines extended experiences.
+ * Pairs the Alaska Airlines logo with a product title and subtitle for the header of an Alaska Airlines extended experience, such as a partner service.
+ *
+ * **Key capabilities**
+ * - **Product title and subtitle**: The `title` and `subtitle` slots show the product name and a short line under it.
+ * - **Dark backgrounds**: `appearance="inverse"` switches to colors that read on dark backgrounds.
+ * - **oneworld logo**: `variant="oneworld"` shows the oneworld logo in place of the title and subtitle.
+ * - **Links to your site**: `path` sets where the lockup links, `/` by default.
+ *
+ * @example
+ * <auro-lockup>
+ *   <span slot="title">Product name</span>
+ *   <span slot="subtitle">Powered by partner name</span>
+ * </auro-lockup>
+ *
+ * @summary A header logo lockup that pairs the Alaska Airlines logo with a product title and subtitle.
  * @customElement auro-lockup
  *
- * @slot title - Set title for lockup
- * @slot subtitle - Set sub-title for lockup
- * @attr {Boolean} onDark - DEPRECATED - Use `appearance="inverse"` instead.
+ * @slot title - The product or site name shown next to the logo. The slot isn't shown when `variant="oneworld"`.
+ * @slot subtitle - A short line shown under the title, such as the name of a partner. The slot isn't shown when `variant="oneworld"`.
+ * @attr {Boolean} onDark - Deprecated: Use `appearance="inverse"` instead.
  */
 export class AuroLockup extends LitElement {
   constructor() {
@@ -49,9 +63,8 @@ export class AuroLockup extends LitElement {
       // ...super.properties,
 
       /**
-       * Defines whether the component will be on lighter or darker backgrounds.
+       * Sets the lockup's colors to match its background. Use `inverse` on dark backgrounds, and leave it unset or use `default` on light backgrounds.
        * @property {'default', 'inverse'}
-       * @default 'default'
        */
       appearance: {
         type: String,
@@ -59,7 +72,9 @@ export class AuroLockup extends LitElement {
       },
 
       /**
-       * DEPRECATED - Use `appearance="inverse"` instead.
+       * Deprecated: Use `appearance="inverse"` instead.
+       * Switches the lockup to colors for dark backgrounds.
+       * @deprecated Use `appearance="inverse"` instead.
        */
       onDark: {
         type: Boolean,
@@ -67,7 +82,9 @@ export class AuroLockup extends LitElement {
       },
 
       /**
-       * DEPRECATED - Use `variant="oneworld"` instead.
+       * Deprecated: Use `variant="oneworld"` instead.
+       * Shows the oneworld logo in place of the title and subtitle.
+       * @deprecated Use `variant="oneworld"` instead.
        */
       oneworld: {
         type: Boolean,
@@ -75,14 +92,17 @@ export class AuroLockup extends LitElement {
       },
 
       /**
-       * URL path for lockup link.
+       * Sets the page the lockup links to, such as your product's home page (the link's `href`).
+       * @default '/'
        */
       path: {
         type: String,
       },
 
       /**
-       * Uses the standard Alaska logo in place of the official logo, requires use of `oneWorld` attribute.
+       * Shows the Alaska Airlines logo without its tagline in place of the logo with the tagline.
+       * Applies only when `variant="oneworld"`.
+       * @relevantWhen variant === 'oneworld'
        */
       standard: {
         type: Boolean,
@@ -90,7 +110,7 @@ export class AuroLockup extends LitElement {
       },
 
       /**
-       * Sets lockup variant option. Only possible value is `oneworld`.
+       * Sets the lockup's layout. Use `oneworld` to show the oneworld logo in place of the divider, title, and subtitle. Leave it unset to show the title and subtitle.
        */
       variant: {
         type: String,
@@ -104,11 +124,11 @@ export class AuroLockup extends LitElement {
   }
 
   /**
-   * This will register this element with the browser.
-   * @param {string} [name="auro-lockup"] - The name of the element that you want to register.
+   * Registers the element with the browser under a tag name.
+   * @param {string} [name="auro-lockup"] - The tag name to register the element under.
    *
    * @example
-   * AuroLockup.register("custom-lockup") // this will register this element to <custom-lockup/>
+   * AuroLockup.register("custom-lockup") // registers the element as <custom-lockup>
    *
    */
   static register(name = "auro-lockup") {

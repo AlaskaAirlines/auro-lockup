@@ -6,4 +6,4 @@ import { AuroLockup } from '@aurodesignsystem/auro-lockup/class';
 AuroLockup.register('custom-lockup');
 ```
 
-This will create a new custom element `<custom-lockup>` that behaves exactly like `<auro-lockup>`, allowing both to coexist on the same page without interfering with each other.
+This creates a new custom element, `<custom-lockup>`, that behaves exactly like `<auro-lockup>`, so both can be on the same page without interfering with each other.
